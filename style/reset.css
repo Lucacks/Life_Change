@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+
+    --dark-color: #2E282A;
+    --white-color: #F4F4F6;
+    --green-color: #16F4D0;
+    --gray-color: #C4C4C4;
+    --blue-color: #51BEFF;
+    --yellow-color: #FFBF00;
+}
+
+a, a:hover, a:active, a:visited, a::after, a::before{
+    text-decoration: none;
+    color: inherit;
+}

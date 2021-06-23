@@ -1,0 +1,124 @@
+.profile-container{
+    width: 265px;
+
+    padding-top: 28px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#profile-pic{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    margin-bottom: 3px;
+}
+
+.profile-container p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 2px 0;
+}
+
+.fa-star{
+    color: var(--yellow-color);
+    font-size: 1.3rem;
+}
+
+.fa-cog{
+    color: var(--white-color);
+    font-size: 2.2rem;
+    margin-top: 5px;
+}
+
+/* Experience bar and infos */
+
+.xp-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 12px;
+}
+
+.xp-bar{
+    width: 100%;
+    height: 7px;
+    background: var(--white-color);
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.total-xp{
+    width: 50%;
+    height: 7px;
+    background: var(--green-color);
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+.xp-read{
+    font-size: .9rem;
+    margin-top: 0;
+}
+
+hr{
+    opacity: .3;
+    border: none;
+    background: var(--gray-color);
+    height: .1px;
+    margin: 5px 0px 15px;
+}
+
+/* Main contents */
+
+main{
+    float: left;
+}
+
+.titles{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+
+    border-bottom: 1px solid var(--white-color);
+    width: fit-content;
+
+    margin-bottom: 17px;
+}
+
+.diary-bar{
+    width: 265px;
+    display: flex;
+    flex-direction: column;    
+    margin-bottom: 12px;
+}
+
+.diary-bar h4{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 21px;
+}
+
+.rec{
+    height: 220px;
+    background: var(--gray-color);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--dark-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
