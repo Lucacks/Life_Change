@@ -82,17 +82,6 @@ main{
     float: left;
 }
 
-.titles{
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-align: left;
-
-    border-bottom: 1px solid var(--white-color);
-    width: fit-content;
-
-    margin-bottom: 17px;
-}
-
 .diary-bar{
     width: 265px;
     display: flex;
