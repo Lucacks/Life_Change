@@ -1,0 +1,80 @@
+.titles{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+
+    border-bottom: 1px solid var(--white-color);
+    width: fit-content;
+
+    margin-bottom: 17px;
+}
+
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 28px;
+    margin-bottom: 10px;
+}
+
+.profile-container p{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.side-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-cog{
+    font-size: 1.8rem;
+    padding-top: 5px;
+}
+
+.conquer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conquer-container p{
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.conquer-container h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.desc-edit{
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(244, 244, 246, .2);
+    margin-bottom: 8px;
+}
+
+.pencil-edit{
+    height: 12px;
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add p:nth-child(1){
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: .8;
+}
+
+.add p:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: 700;
+}
