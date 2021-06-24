@@ -1,0 +1,83 @@
+.food-container{
+    display: flex;
+    flex-direction: column;
+    padding: 28px 0 10px;
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid rgba(244, 244, 246, .2);
+}
+
+.food-container p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.side-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-cog{
+    font-size: 1.8rem;
+    padding-top: 5px;
+}
+
+.food-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid rgba(244, 244, 246, .2);
+}
+
+.food-group:last-child{
+    margin-bottom: 50px;
+}
+
+.name-hour{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+#food-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.name-hour .food-hour{
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+#food-op{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#food-name{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.edit-delete{
+    width: 11.7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-delete-edit{
+    height: 12px;
+}
+
+#add-food{
+    font-size: 2.4rem;
+    font-weight: bold;
+}

@@ -21,6 +21,12 @@ a, a:hover, a:active, a:visited, a::after, a::before{
     color: inherit;
 }
 
+button{
+    background: none;
+    border: none;
+    color: inherit;
+}
+
 .titles{
     font-size: 1.8rem;
     font-weight: 700;
