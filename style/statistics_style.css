@@ -134,6 +134,87 @@
     border-right-color: var(--dark-color);
 }
 
+/* Steps box */
+
+.steps-table{
+    width: 100%;
+    height: 50px;
+
+    background: rgba(196, 196, 196, .8);
+    border-radius: 7px;
+    margin: 3px 0 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-line{
+    width: 92.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.number-line .number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.number-line .number p:nth-child(1){
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--dark-color);
+    margin-bottom: -3px;
+} 
+
+.number-line .number p:nth-child(2){
+    font-size: .5rem;
+    font-weight: 500;
+    color: var(--dark-color);
+} 
+
+/* Steps indicator */
+
+.indicator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 280px;    
+}
+
+.indicator svg:nth-child(1){
+    height: 28px;
+    margin-bottom: -2px;
+}
+
+.indicator svg:nth-child(2){
+    width: 10px;
+    height: 5px;
+}
+
+.steps-xp-bar{
+    width: 91%;
+    height: 2px;
+    background: var(--dark-color);
+    border-radius: 10px;    
+}
+
+.total-steps-xp{
+    width: 50%;
+    height: 2px;
+    background: var(--white-color);
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+/* Water box */
+
 .water-table{    
     display: flex;
     flex-direction: column;
@@ -144,6 +225,7 @@
     background: var(--blue-color);
     border-radius: 7px;
 
+    margin: 3px 0 12px;
 }
 
 .water-table p:nth-child(1){
@@ -167,4 +249,23 @@
 
 .cup-container svg{
     margin: 0 .8px;
+}
+
+/* Graphics style */
+
+.graphic-table{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: var(--dark-color);
+    font-weight: 600;
+
+    width: 100%;
+    height: 140px;
+    background: var(--gray-color);
+    border-radius: 7px;
+
+    margin: 3px 0 50px;
 }
