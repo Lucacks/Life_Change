@@ -1,0 +1,128 @@
+.side-side{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+    padding: 28px 0 10px;
+}
+
+.fa-cog{
+    font-size: 1.8rem;
+    padding-top: 5px;
+}
+
+.subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;    
+}
+
+.kcal-table{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1fr; 
+    gap: 10px 0; 
+    grid-template-areas:"carbo fat protein""consumed total spent";
+
+    width: 100%;
+    height: 153px;
+    background: var(--green-color);
+    border-radius: 7px;
+}
+
+/* Grid areas */
+
+.carbo{
+    grid-area: "carbo";
+}
+.fat{
+    grid-area: "fat";
+}
+.protein{
+    grid-area: "protein";
+}
+.consumed{
+    grid-area: "consumed";
+}
+.total{
+    grid-area: "total";
+}
+.spent{
+    grid-area: "spent";
+}
+
+/* XP bar */
+
+.xp-bar{
+    width: 100%;
+    height: 2px;
+    background: var(--dark-color);
+    border-radius: 10px;    
+}
+
+.total-xp{
+    width: 50%;
+    height: 2px;
+    background: var(--white-color);
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+/* Items config inside the table */
+
+.kcal-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 7px;
+}
+
+.kcal-info h1, .kcal-info h4{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark-color);
+    padding-top: 3px;
+}
+
+.kcal-info p{
+    font-size: .7rem;
+    font-weight: 400;
+    color: var(--dark-color);
+    padding-top: 3px;
+}
+
+.total h1{
+    font-size: 1.1rem;
+}
+
+/* Semi-circle Style */
+
+.progress{
+    position: relative;
+    margin: 4px;
+    float:left;
+    text-align: center;
+}
+
+.barOverflow{ /* Wraps the rotating .bar */
+    position: relative;
+    width: 180px; 
+    height: 90px; /* Half circle (overflow) */
+    margin-bottom: -10px; /* bring the numbers up */
+    overflow: hidden;
+}
+
+.bar{
+    position: absolute;
+    top: 0; 
+    left: 0;
+
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 10px solid var(--white-color);     /* half gray, */
+    border-bottom-color: var(--dark-color);  /* half azure */
+    border-right-color: var(--dark-color);
+}

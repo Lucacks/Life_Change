@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Life Change</title>
+
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/statistics_style.css">
+    <link rel="stylesheet" href="style/bottom_menu.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div class="container">        
+        <div class="side-side">
+            <h1 class="titles">Estatísticas</h1>
+            <a href="#"><i class="fas fa-cog"></i></a>
+        </div>
+
+    <p class="subtitle">Resumo de consumo calórico</p>
+    <div class="kcal-table">
+        <div class="kcal-info carbo">
+            <h1>Carboidrato</h1>            
+            <div class="xp-bar">
+                <div class="total-xp"></div>
+            </div>
+            <p>XXXg/500g</p>
+        </div>
+        <div class="kcal-info fat">
+            <h1>Gordura</h1>            
+            <div class="xp-bar">
+                <div class="total-xp"></div>
+            </div>
+            <p>XXXg/200g</p>
+        </div>
+        <div class="kcal-info protein">
+            <h1>Proteína</h1>            
+            <div class="xp-bar">
+                <div class="total-xp"></div>
+            </div>
+            <p>XXXg/400g</p>
+        </div>
+        <div class="kcal-info consumed">
+            <h1>Consumidas</h1>            
+            <div class="xp-bar">
+                <div class="total-xp"></div>
+            </div>
+            <h4>1500Kcal</h4>
+        </div>
+        <div class="kcal-info total">
+            <h1>Total</h1>   
+            
+            <!-- Semi-circle total -->
+
+            <div class="progress">
+                <div class="barOverflow">
+                  <div class="bar"></div>
+                </div>
+                <span>10</span>%
+              </div>
+                     
+            <!-- End -->
+
+            <p>XXXg/500g</p>
+        </div>
+        <div class="kcal-info spent">
+            <h1>Gastas</h1>            
+            <div class="xp-bar">
+                <div class="total-xp"></div>
+            </div>
+            <h4>1500Kcal</h4>
+        </div>
+    </div>
+
+    <footer class="menu">
+        <nav id="menu">
+            <a class="items" href="profile.html">
+                <div class="items">
+                    <img class="icons" src="/assets/icons/profile.png" alt="Perfil">
+                    <p>Perfil</p>
+                </div>                
+            </a>
+            <a href="statistics.html" class="items">
+                <div class="items">
+                    <img class="icons" src="/assets/icons/statistics.png" alt="Stats">
+                    <p>Estatísticas</p>
+                </div>
+            </a>
+            <a href="food.html" class="items">
+                <div class="items">
+                    <img class="icons" src="/assets/icons/food.png" alt="Alimentação">
+                    <p>Alimentação</p>
+                </div>
+            </a>
+            <a href="ranking.html" class="items">
+                <div class="items">
+                    <svg class="icons" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6.85205" y="8" width="6.2951" height="12" fill="#F4F4F6"/>
+                    <path d="M14.1177 12.756H19.9999V20H14.1177V12.756Z" fill="#F4F4F6"/>
+                    <path d="M0 12.756H5.88227V20H0V12.756Z" fill="#F4F4F6"/>
+                    <path d="M9.99953 0L8.91986 2.21023L6.48096 2.5525L8.25258 4.26083L7.82501 6.6827L9.99953 5.52817L12.1741 6.6827L11.7465 4.26083L13.5181 2.5525L11.0792 2.21023L9.99953 0Z" fill="#F4F4F6"/></svg>
+                    <p>Ranking</p>
+                </div>
+            </a>
+        </nav>
+    </footer>  
 </body>
 </html>
