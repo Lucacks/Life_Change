@@ -8,9 +8,31 @@ body{
 }
 
 .container{
-    width: 265px;
+    width: 82%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* Cellphone screens */
+
+@media screen and (min-width: 360px) {
+    
+}
+
+@media screen and (min-width: 414px) {
+
+}
+
+/* Tablet screens */
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/* Computer and notebook screens */
+
+@media screen and (min-width: 1280px) {
+    
 }

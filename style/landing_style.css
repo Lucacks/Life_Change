@@ -1,22 +1,21 @@
 h1{
-    font-size: 3.6rem;
+    font-size: 11.25vw;
     margin: 14px 11px 9px;
     font-weight: 700;
 }
 
 p{
-    font-size: 1.8rem;
+    font-size: 5.625vw;
     font-weight: 500;
 }
 
 img{
-    width: 240px;
-    height: 240px;
-    margin: 28px auto;
+    width: 100%;
+    margin: 28px 0;
 }
 
 button{
-    width: 240px;
+    width: 100%;
     height: 56px;
     margin: auto;
 
@@ -49,5 +48,6 @@ button{
 a{    
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 4.375vw;
 }
+

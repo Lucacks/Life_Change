@@ -111,3 +111,7 @@ main{
     margin-bottom: 20px;
 }
 
+.rec:last-child{
+    margin-bottom: 50px;
+}
+
