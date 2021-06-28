@@ -6,7 +6,7 @@ O Life Change é um app feito para pessoas que querem mudar seu estilo de vida. 
 
 A ideia da faculdade é que os alunos desenvolvão uma aplicação sobre saúde e esta é uma ideia pensada do zero e com design e codificação realizadas por mim.
 
-O app ainda não possui telas funcionais, mas aqui estão alguns prints dele:
+Para acessar o projeto, [CLIQUE AQUI](https://lucacks.github.io/Life_Change/)
 
 ## Primeira tela (contato inicial do usuário)
 ![enter image description here](https://github.com/Lucacks/Life_Change/blob/main/assets/index_first.png?raw=true)
