@@ -1,3 +1,10 @@
+.mobile-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1{
     font-size: 11.25vw;
     margin: 14px 11px 9px;
@@ -51,3 +58,236 @@ a{
     font-size: 4.375vw;
 }
 
+.desktop-content{
+    visibility: hidden;
+    display: none;
+}
+
+@media screen and (min-width: 575px) {
+    a{
+        font-size: 3.75vw;
+    }
+}
+
+@media screen and (min-width: 620px){
+    .container{
+        width: 90vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .mobile-form{
+        visibility: hidden;
+        display: none;
+    }
+
+
+    .desktop-content{
+        visibility: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aside-content, 
+    .login-content, 
+    .login-form, 
+    .social-media-login, 
+    .download-app{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aside-content{
+        width: 40%;
+        margin: 30px;
+        margin-right: 0;
+        padding: 0 20px;
+    }
+    .aside-content p:nth-child(1){
+        font-size: 2rem;
+        font-weight: 600;
+        flex-basis: 60%;
+    }
+    .aside-content p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .aside-content img{
+        max-width: 280px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+
+    /* Login style */
+    .login-content{
+        width: 400px;
+    }
+    .login-form{
+        width: 90%;
+        border: 2px solid rgba(244, 244, 246, .1);
+        margin: 30px;
+        padding: 0 20px;
+    }
+    .login-form h1{
+        font-size: 3rem;
+    }
+    .login-form form{
+        width: 100%;
+    }
+    .login-form .sigin{
+        background: none;
+        border: 2px solid var(--green-color);
+        color: var(--white-color);
+    }
+
+    /* Social media login style */
+    .social-media-login{
+        width: 90%;
+        border: 2px solid rgba(244, 244, 246, .1);
+        margin: -10px 0 20px;
+        padding: 0 20px;
+    }
+    .social-media-login h3{
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+    .social-media-login .facebook{
+        background: #4267B2;
+        color: var(--white-color);
+    }
+    .social-media-login .fa-facebook-f,
+    .social-media-login .fa-google{
+        margin-right: 5px;
+    }
+    .social-media-login .google{
+        background: var(--white-color);
+        color: var(--dark-color);
+    }
+    .fa-google{        
+        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    /* Download style */
+    .download-app{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .download-app h3{
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .stores{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+    }
+    .stores a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--green-color);
+        border-radius: 30px;
+        padding: 10px 0;
+        width: 49%;
+    }
+    .stores i{
+        font-size: 1.8rem;
+        color: var(--white-color);
+    }
+    .stores .fa-apple{
+        font-size: 2rem;
+    }
+    .stores p{
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 1150px){
+    body{
+        background: var(--white-color);
+    }
+    .aside-content p:nth-child(1){
+        font-size: 2.2rem;
+    }
+    .aside-content img{
+        margin: 50px 0 20px;
+    }
+
+    p, 
+    h1, 
+    h3, 
+    label, 
+    .input-form input{
+        color: var(--dark-color);
+    }
+
+    .login-form .login, 
+    .social-media-login .facebook, 
+    .social-media-login .google,
+    .stores .download-btn{
+        transition: .6s;
+    }
+    .login-form .login:hover{
+        background: var(--green-hover);
+    }
+    .login-form .sigin{
+        color: var(--dark-color);
+        transition: .6s;
+    }
+    .login-form .sigin:hover{
+        background: var(--green-color);
+    }
+    .social-media-login .facebook:hover{
+        background: #2C4577;
+    }
+    .social-media-login .google:hover{
+        background: rgba(46, 40, 42, .2);
+    }
+
+    .login-form, .social-media-login{
+        border: 2px solid rgba(46, 40, 42, .2);
+    }
+
+    .input-form input::placeholder{
+        color: rgba(46, 40, 42, .6);
+    }
+
+    .sigin{
+        color: var(--dark-color);
+    }
+    .social-media-login .google{
+        border: 1px solid var(--dark-color);
+    }
+    .download-btn:hover{
+        background: var(--green-color);
+    }
+    .stores i{
+        color: var(--dark-color);
+    }
+
+    .landing-credits{
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+    }
+    .landing-credits a{
+        font-size: 1.2rem;
+        color: var(--green-color);
+        opacity: 1;
+    }
+    .landing-credits p{
+        font-size: 1.2rem;
+        opacity: .7;
+        margin: 2px;
+    }
+}

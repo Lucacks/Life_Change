@@ -3,6 +3,7 @@
     padding-top: 28px;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -41,6 +42,10 @@ h2{
 }
 
 .fa-cog{
+    position: absolute;
+    top: 27px;
+    right: 9.25vw;
+
     color: var(--white-color);
     font-size: 2.2rem;
     margin-top: 5px;
@@ -105,6 +110,7 @@ main{
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 21px;
+    margin-bottom: 3px;
 }
 
 .rec{
@@ -127,3 +133,33 @@ main{
     margin-bottom: 50px;
 }
 
+@media screen and (min-width: 620px) {
+    #profile-pic{
+        margin-top: 10px;
+    }
+    .profile-content{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60vw;
+        height: 30px;
+    }
+    .profile-content p{
+        font-size: 1.4rem;
+        margin-top: 4px;
+    }
+    .xp-container{
+        position: absolute;
+        right: 66px;
+        top: 50px;
+        width: 64%;
+    }
+    hr{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .xp-container{
+        right: 12vw;
+    }
+}

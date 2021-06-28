@@ -11,6 +11,7 @@
     --dark-color: #2E282A;
     --white-color: #F4F4F6;
     --green-color: #16F4D0;
+    --green-hover: #079C83;
     --gray-color: #C4C4C4;
     --blue-color: #51BEFF;
     --yellow-color: #FFBF00;
@@ -24,7 +25,7 @@ a, a:hover, a:active, a:visited, a::after, a::before{
 button{
     background: none;
     border: none;
-    color: inherit;
+    cursor: pointer;
 }
 
 .titles{
@@ -36,6 +37,54 @@ button{
     width: fit-content;
 
     margin-bottom: 17px;
+}
+
+/* For all inputs */
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-form label{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 7px;
+    padding-left: 2px;
+}
+
+.input-form input{
+    width: 100%;
+    background: none;
+    border: 2px solid var(--green-color);
+    height: 39px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    color: var(--white-color);
+    padding-left: 16px;
+    font: 1.4rem 500 'Poppins', sans-serif;
+
+    outline: none;
+}
+
+.input-form input::placeholder{
+    color: rgba(244, 244, 246, .2);
+}
+
+/* Default buttons */
+
+.def-btn{
+    width: 100%;
+    height: 39px;
+    background: var(--green-color);
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--dark-color);
+
+    margin-bottom: 18px;
 }
 
 /* Font-sizes for small screens

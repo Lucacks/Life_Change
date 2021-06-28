@@ -12,18 +12,75 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
 </head>
 
 <body>
     <div class="container">
-        <h1>Life Change</h1>
-        <p>Mude o seu estilo de vida</p>
+        <div class="mobile-form">
+            <h1>Life Change</h1>
+            <p>Mude o seu estilo de vida</p>
 
-        <img src="assets/Quadrada.JPG" alt="Fotos">
+            <img src="assets/Quadrada.JPG" alt="Fotos">
 
-        <button id="sign-in" type="button"><a href="index.html">Comece sua mudança agora!</a></button>
-        <button id="log-in" type="button"><a href="index.html">Já tenho uma conta</a></button>
+            <button id="sign-in" type="button"><a href="index.html">Comece sua mudança agora!</a></button>
+            <button id="log-in" type="button"><a href="index.html">Já tenho uma conta</a></button>
+        </div>
+
+        <div class="desktop-content">
+            <div class="aside-content">
+                <p>Mude seu estilo de vida</p>
+                <img src="/assets/IMG_6532-Edit.jpg" alt="Foto">
+                <p>Faça como estas pessoas e mude sua vida também.</p>
+            </div>
+
+            <div class="login-content">
+                <div class="login-form">
+                    <h1>Life Change</h1>
+                    <form action="">
+                        <div class="input-form">
+                            <label for="login">Digite seu usuário</label>
+                            <input type="text" name="" id="login" placeholder="Seu nome de usuário aqui">
+                        </div>
+                        <div class="input-form">
+                            <label for="password">Digite sua senha</label>
+                            <input type="password" name="" id="password" placeholder="Sua senha aqui">
+                        </div>
+                        <button onclick="window.location.href='index.html'" class="def-btn login" type="button">Entrar</button>
+                        <button onclick="window.location.href='index.html'" class="def-btn sigin" type="button">Fazer cadastro</button>
+                    </form>
+                </div>
+                <div class="social-media-login">
+                    <h3>Fazer login com suas redes</h3>
+                    <button class="def-btn facebook" type="button"><i class="fab fa-facebook-f"></i> Entrar com Facebook</button>
+                    <button class="def-btn google" type="button"><i class="fab fa-google"></i> Entrar com Google</button>
+                </div>
+                <div class="download-app">
+                    <h3>Que tal baixar nosso aplicativo?</h3>
+                    <div class="stores">
+                        <a class="app-store download-btn" href="#">
+                            <i class="fab fa-apple"></i>
+                            <p>App Store</p>
+                        </a>
+                        <a class="google-play download-btn" href="#">
+                            <i class="fab fa-google-play"></i>
+                            <p>Google Play</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="landing-credits">
+                <p>Um aplicativo pensado e criado por <a href="https://www.linkedin.com/in/lucacks/">Lucas Alves</a></p>
+                <p>Desafio proposto pela Faculdade de Informática e Administração Paulista (FIAP)</p>
+                <p>Ideia, design e desenvolvimento feitos por mim, Lucas. :)</p>
+            </footer>
+
+        </div>
+
+
+
 
 
     </div>
