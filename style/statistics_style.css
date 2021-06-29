@@ -98,6 +98,11 @@
     font-size: 1.2rem;
 }
 
+.desktop-container>h1{
+    visibility: hidden;
+    display: none;
+}
+
 /* Semi-circle Style */
 
 .progress{ 
@@ -185,7 +190,7 @@
     align-items: center;
 
     position: absolute;
-    top: 280px;    
+    top: 450px;    
 }
 
 .indicator svg:nth-child(1){
@@ -295,6 +300,10 @@
     .tables-summary .table{
         width: 270px;
     }
+
+    .indicator{
+        top: 280px;
+    }
     
 }
 
@@ -317,6 +326,11 @@
         color: var(--white-color);
     }
 
+    .desktop-container>h1{
+        visibility: visible;
+        display: initial;
+    }
+
     .container{
         position: relative;
         display: flex;
@@ -334,6 +348,10 @@
         right: 0;
         top: 90px;
         float: right;
+    }
+
+    .subtitle{
+        margin-top: 20px;
     }
 
     .tables-summary{
@@ -431,7 +449,7 @@
 
     .indicator{
         position: absolute;
-        top: 340px;
+        top: 360px;
     }
 
     .indicator svg:nth-child(1){
