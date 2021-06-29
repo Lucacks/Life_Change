@@ -3,6 +3,10 @@
     display: none;
 }
 
+.responsive-container{
+    width: 100%;
+}
+
 .food-container{
     width: 100%;
     display: flex;
