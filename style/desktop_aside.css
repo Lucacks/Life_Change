@@ -3,6 +3,10 @@
         visibility: visible;
         display: initial;
 
+        position: absolute;
+        top: 350px;
+        left: 0;
+
         width: 225px;
         margin-right: 70px;
         margin-top: -23%;
@@ -14,21 +18,21 @@
         border-radius: 50%;
     }
 
-    .info-container{
+    .desktop-info-container{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .profile-content h2{
+    .desktop-profile-content h2{
         font-size: 2rem;
         font-weight: 600;
         margin-bottom: 5px;
         margin-top: -8px;
     }
 
-    .profile-content p, .fa-star{
+    .desktop-profile-content p, .fa-star{
         font-size: 1.4rem;
         font-weight: 400;      
     }
@@ -37,9 +41,8 @@
         color: var(--yellow-color);
     }
 
-    .profile-content p:nth-child(2){
+    .desktop-profile-content p:nth-child(2){
         margin-bottom: 3px;  
-
     }
 
     /* XP bar */
@@ -55,7 +58,7 @@
         font-size: 1.1rem;
     }
 
-    .xp-container{
+    .desktop-xp-container{
         width: 100%;
     
         display: flex;
@@ -65,7 +68,7 @@
         margin-top: 12px;
     }
     
-    .xp-bar{
+    .desktop-xp-bar{
         width: 100%;
         height: 7px;
         background: var(--dark-color);
@@ -73,7 +76,7 @@
         margin-top: 2px;
     }
     
-    .total-xp{
+    .desktop-total-xp{
         width: 50%;
         height: 7px;
         background: var(--green-color);
@@ -123,7 +126,11 @@
     
     .info-rank-content{
         margin-left: 10px;
-    }    
+    }
+
+    .info-rank-content .fa-star{
+        font-size: .9rem;
+    }
     
     .rank-content h1{
         font-size: 1rem;

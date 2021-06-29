@@ -65,6 +65,8 @@
         align-items: center;
         justify-content: center;
         background: var(--dark-color);
+
+        z-index: 99;
     }
 
     .menu-container{

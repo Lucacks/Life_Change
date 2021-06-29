@@ -11,15 +11,113 @@
     <link rel="stylesheet" href="style/responsive.css">
     <link rel="stylesheet" href="style/index_style.css">
     <link rel="stylesheet" href="style/bottom_menu.css">
+    <link rel="stylesheet" href="style/desktop_aside.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 
-<body>
+<body>    
+    <header id="logo-menu">
+        <div class="menu-container">
+            <h1 class="index-logo" onclick="window.location.href='index_profile.html'">Life Change</h1>
+            <div class="menu">
+                <svg onclick="window.location.href='statistics.html'" width="30" height="30" viewBox="0 0 30 30"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.45312 14.0625C5.1622 14.0625 5.80399 13.778 6.27823 13.3212L8.87993 14.6219C8.86688 14.7279 8.84766 14.832 8.84766 14.9414C8.84766 16.3953 10.0305 17.5781 11.4844 17.5781C12.9382 17.5781 14.1211 16.3953 14.1211 14.9414C14.1211 14.5356 14.0213 14.1557 13.8567 13.8119L17.3861 10.2825C17.7299 10.4471 18.1098 10.5469 18.5156 10.5469C19.9695 10.5469 21.1523 9.36401 21.1523 7.91016C21.1523 7.63641 21.0986 7.37755 21.0207 7.12921L24.0873 4.82986C24.5057 5.10933 25.0072 5.27344 25.5469 5.27344C27.0007 5.27344 28.1836 4.09058 28.1836 2.63672C28.1836 1.18286 27.0007 0 25.5469 0C24.093 0 22.9102 1.18286 22.9102 2.63672C22.9102 2.91046 22.9639 3.16933 23.0418 3.41766L19.9752 5.71701C19.5568 5.43755 19.0553 5.27344 18.5156 5.27344C17.0618 5.27344 15.8789 6.4563 15.8789 7.91016C15.8789 8.31596 15.9787 8.69591 16.1433 9.03969L12.6139 12.569C12.2701 12.4045 11.8902 12.3047 11.4844 12.3047C10.7753 12.3047 10.1335 12.5892 9.65927 13.046L7.05757 11.7453C7.07062 11.6393 7.08984 11.5352 7.08984 11.4258C7.08984 9.97192 5.90698 8.78906 4.45312 8.78906C2.99927 8.78906 1.81641 9.97192 1.81641 11.4258C1.81641 12.8796 2.99927 14.0625 4.45312 14.0625Z"
+                        fill="#F4F4F6" />
+                    <path
+                        d="M29.1211 28.2422H28.1836V9.66797C28.1836 9.18228 27.7904 8.78906 27.3047 8.78906H23.7891C23.3034 8.78906 22.9102 9.18228 22.9102 9.66797V28.2422H21.1523V14.9414C21.1523 14.4557 20.7591 14.0625 20.2734 14.0625H16.7578C16.2721 14.0625 15.8789 14.4557 15.8789 14.9414V28.2422H14.1211V21.9727C14.1211 21.487 13.7279 21.0938 13.2422 21.0938H9.72656C9.24088 21.0938 8.84766 21.487 8.84766 21.9727V28.2422H7.08984V18.457C7.08984 17.9713 6.69662 17.5781 6.21094 17.5781H2.69531C2.20963 17.5781 1.81641 17.9713 1.81641 18.457V28.2422H0.878906C0.393219 28.2422 0 28.6354 0 29.1211C0 29.6068 0.393219 30 0.878906 30H29.1211C29.6068 30 30 29.6068 30 29.1211C30 28.6354 29.6068 28.2422 29.1211 28.2422Z"
+                        fill="#F4F4F6" />
+                </svg>
+                <svg onclick="window.location.href='food.html'" width="20" height="31" viewBox="0 0 20 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.1694 0.116755C19.0033 -0.00151701 18.7893 -0.0292417 18.5968 0.0374745C18.5427 0.0563509 13.144 2.03961 13.144 8.18074C13.144 12.6016 14.5824 14.834 15.3916 15.7401L14.5862 16.5455C14.483 16.6486 14.4188 16.7833 14.405 16.928L13.4096 26.8834C13.324 27.7303 13.6021 28.5785 14.1734 29.2102C14.7448 29.842 15.564 30.2032 16.4147 30.2032C18.0796 30.2032 19.435 28.8478 19.435 27.1829V0.630193C19.4362 0.42503 19.3368 0.235028 19.1694 0.116755Z" fill="#F4F4F6"/>
+                    <path d="M9.87519 8.14957L8.73258 0.536089C8.68728 0.226516 8.42171 0 8.1109 0C8.10459 0 8.09704 0 8.08949 0C7.76983 0.0100871 7.50933 0.257957 7.48421 0.576378L6.93302 7.18688C6.89904 7.59461 6.17542 7.59461 6.14145 7.18688L5.59155 0.576378C5.56383 0.250407 5.29201 0 4.96486 0C4.63765 0 4.36459 0.250407 4.33816 0.576378L3.78697 7.18688C3.75299 7.59461 3.02938 7.59461 2.9954 7.18688L2.44545 0.576378C2.41902 0.259255 2.15853 0.0113258 1.83887 0C1.83132 0 1.82501 0 1.81875 0C1.50794 0 1.24238 0.226516 1.19707 0.536089L0.0557005 8.14957C-0.280299 10.3808 0.930326 12.515 2.97145 13.4048L1.99997 27.0209C1.9421 27.8402 2.22902 28.6544 2.789 29.2559C3.34774 29.8574 4.13931 30.2022 4.96232 30.2022H4.96733C5.78911 30.2022 6.58191 29.8574 7.14189 29.2558C7.70187 28.6543 7.98879 27.8401 7.93093 27.0209L6.95944 13.4048C9.00063 12.515 10.2112 10.3808 9.87519 8.14957Z" fill="#F4F4F6"/>
+                    </svg>
+                    
+                <img class="profile-settings" src="" alt="">
+            </div>
+
+        </div>
+    </header>
+
     <div class="container">
-            <div class="profile-container">
+
+        <aside id="profile-desktop">
+            <div class="desktop-info-container">
+                <img id="profile-pic" src="assets/Quadrada.JPG" alt="Foto de perfil">
+                <div class="desktop-profile-content">
+                    <h2>Lucas Alves</h2>
+                    <p>Peso atual: 71kg</p>
+                    <p>Suas estrelas: 4 <i class="fas fa-star"></i></p>
+                </div>
+            </div>
+            <div class="desktop-xp-container">
+                <div class="kcal-prize">
+                    <p>Calorias até sua recompensa</p>
+                    <p>+1 <i class="fas fa-star"></i></p>
+                </div>
+                <div class="desktop-xp-bar">
+                    <div class="desktop-total-xp"></div>
+                </div>
+                <i class="fas fa-caret-up"></i>
+                <p class="xp-read">1500Kcal</p>
+            </div>
+
+            <!-- Ranking. -->
+            <div id="ranking">
+                <h4>Ranking para você se inspirar</h1>
+                    <div class="rank">
+                        <div class="rank-content">
+                            <img class="profile-pic" src="" alt="Foto">
+                            <div class="info-rank-content">
+                                <h1>Nome Sobrenome</h1>
+                                <p>Estrelas: 34 <i class="fas fa-star"></i></p>
+                                <p>Está mudando há 1 ano</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="rank">
+                        <div class="rank-content">
+                            <img class="profile-pic" src="" alt="Foto">
+                            <div class="info-rank-content">
+                                <h1>Nome Sobrenome</h1>
+                                <p>Estrelas: 34 <i class="fas fa-star"></i></p>
+                                <p>Está mudando há 1 ano</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="rank">
+                        <div class="rank-content">
+                            <img class="profile-pic" src="" alt="Foto">
+                            <div class="info-rank-content">
+                                <h1>Nome Sobrenome</h1>
+                                <p>Estrelas: 34 <i class="fas fa-star"></i></p>
+                                <p>Está mudando há 1 ano</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="rank">
+                        <div class="rank-content">
+                            <img class="profile-pic" src="" alt="Foto">
+                            <div class="info-rank-content">
+                                <h1>Nome Sobrenome</h1>
+                                <p>Estrelas: 34 <i class="fas fa-star"></i></p>
+                                <p>Está mudando há 1 ano</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+            </div>
+
+        </aside>
+
+        <div class="profile-container">
                 <div class="info-container">
                     <img id="profile-pic" src="assets/Quadrada.JPG" alt="Foto de perfil">                    
                     <div class="profile-content">
@@ -37,68 +135,102 @@
                     <i class="fas fa-caret-up"></i>
                     <p class="xp-read">1500Kcal</p>
                 </div>
-            </div>
-            <hr>
+        </div>
+        <hr>
     
         <main>
             <h1 class="titles">Seu resumo diário</h1>
-            <div class="diary-bar food">
-                <h4>Alimentações:</h4>
-                <div class="xp-bar">
-                    <div class="total-xp"></div>
+            
+            <div class="xp-bars">
+                <div class="diary-bar food">
+                    <div class="diary-bar-items">
+                        <h4>Alimentações</h4>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="xp-bar">
+                        <div class="total-xp"></div>
+                    </div>
+                    <p>achou que não ia ter textinho?</p>
                 </div>
-                <p>achou que não ia ter textinho?</p>
-            </div>
-
-            <div class="diary-bar calories">
-                <h4>Calorias:</h4>
-                <div class="xp-bar">
-                    <div class="total-xp"></div>
+                <div class="diary-bar calories">
+                    <div class="diary-bar-items">
+                        <h4>Calorias</h4>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="xp-bar">
+                        <div class="total-xp"></div>
+                    </div>
+                    <i class="fas fa-caret-up"></i>
+                    <p class="xp-read">1500Kcal</p>
                 </div>
-                <i class="fas fa-caret-up"></i>
-                <p class="xp-read">1500Kcal</p>
-            </div>
-
-            <div class="diary-bar water">
-                <h4>Água:</h4>
-                <div class="xp-bar">
-                    <div class="total-xp"></div>
+                <div class="diary-bar water">
+                    <div class="diary-bar-items">
+                        <h4>Água</h4>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="xp-bar">
+                        <div class="total-xp"></div>
+                    </div>
+                    <i class="fas fa-tint"></i>
+                    <p class="xp-read">1500ml</p>
                 </div>
-                <i class="fas fa-tint"></i>
-                <p class="xp-read">1500Kcal</p>
-
+                <div class="diary-bar steps">
+                    <div class="diary-bar-items">
+                        <h4>Passos</h4>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="xp-bar">
+                        <div class="total-xp"></div>
+                    </div>
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.66998 14.8667H5.78809C5.66321 14.8667 5.56201 14.7655 5.56201 14.6406C5.56201 14.5158 5.66321 14.4146 5.78809 14.4146H8.66998C8.79487 14.4146 8.89606 14.5158 8.89606 14.6406C8.89606 14.7655 8.79487 14.8667 8.66998 14.8667Z" fill="#C4C4C4"/>
+                        <path d="M6.14963 13.9319H3.01465C2.88977 13.9319 2.78857 13.8307 2.78857 13.7058C2.78857 13.581 2.88977 13.4797 3.01465 13.4797H6.14963C6.27452 13.4797 6.37571 13.581 6.37571 13.7058C6.37571 13.8307 6.27449 13.9319 6.14963 13.9319Z" fill="#D6D8E0"/>
+                        <path d="M9.09408 8.48785C8.99364 8.48785 8.90198 8.42045 8.87545 8.31875L8.47743 6.7915C8.3907 6.45862 8.41168 6.10747 8.5366 5.80275C8.68427 5.44231 9.03265 4.98644 9.85362 4.8615C9.97658 4.84269 10.0923 4.92751 10.1111 5.05098C10.1299 5.17442 10.0451 5.28972 9.92163 5.3085C9.43058 5.38323 9.10536 5.6072 8.955 5.97417C8.86698 6.18892 8.85275 6.43866 8.915 6.67746L9.31302 8.20471C9.34449 8.32553 9.27208 8.449 9.15127 8.4805C9.1321 8.48547 9.11295 8.48785 9.09408 8.48785Z" fill="#51BEFF"/>
+                        <path d="M15 13.7516V14.8669H8.66978L1.49219 7.63237L5.5767 3.54785C4.7592 4.65685 4.99553 6.21861 6.10452 7.03642C6.86657 7.59831 7.84263 7.66221 8.64386 7.28752C9.0086 7.1169 9.33717 6.85556 9.59279 6.5086L9.63107 6.45675L11.2923 11.3099C11.2923 11.3099 15 10.9482 15 13.7516Z" fill="#51BEFF"/>
+                        <path d="M15 13.7515V14.8668H8.66978L1.49219 7.63224L2.35099 6.77344L4.15843 8.59534L4.47705 8.91608L4.72905 9.17019L5.04737 9.49123L9.16625 13.6427H14.9979C14.9994 13.6785 15 13.7147 15 13.7515Z" fill="#C4C4C4"/>
+                        <path d="M11.2923 11.3097H10.3352C10.0066 11.3097 9.71843 11.0915 9.6289 10.7753L8.6438 7.28731C9.00854 7.1167 9.33711 6.85535 9.59273 6.50839L9.63101 6.45654L11.2923 11.3097Z" fill="#C4C4C4"/>
+                        <path d="M2.35107 6.77335L3.93936 5.18506C4.3457 5.5917 4.59711 6.15328 4.59711 6.77335C4.59711 7.39672 4.34299 7.96072 3.93303 8.36796L2.35107 6.77335Z" fill="#FFBF00"/>
+                        <path d="M7.23026 11.6905C5.79149 8.51608 7.04126 7.46315 7.04126 7.46315C7.58084 7.58343 8.14604 7.52012 8.64402 7.28711L8.975 8.45941C6.75761 9.62056 7.22122 11.6517 7.23026 11.6905Z" fill="#FFBF00"/>
+                        <path d="M9.45031 8.00898C9.35813 8.00898 9.27158 7.95221 9.238 7.86067C9.19502 7.74344 9.25521 7.61355 9.37244 7.57056L10.2768 7.23898C10.394 7.19599 10.5239 7.25619 10.5669 7.37339C10.6099 7.49062 10.5497 7.62051 10.4324 7.6635L9.52811 7.99508C9.50243 8.00448 9.47614 8.00898 9.45031 8.00898Z" fill="#2E282A"/>
+                        <path d="M10.1041 9.86957C10.0119 9.86957 9.92539 9.81281 9.89181 9.72127C9.84882 9.60404 9.90902 9.47414 10.0263 9.43116L10.9306 9.09957C11.0478 9.05659 11.1777 9.11679 11.2207 9.23399C11.2637 9.35122 11.2035 9.48111 11.0862 9.52409L10.1819 9.85568C10.1563 9.86511 10.13 9.86957 10.1041 9.86957Z" fill="#2E282A"/>
+                        <path d="M10.431 10.8C10.3388 10.8 10.2523 10.7432 10.2187 10.6517C10.1757 10.5344 10.2359 10.4046 10.3532 10.3616L11.2575 10.03C11.3747 9.98703 11.5046 10.0472 11.5476 10.1644C11.5906 10.2816 11.5304 10.4115 11.4131 10.4545L10.5088 10.7861C10.4832 10.7955 10.4569 10.8 10.431 10.8Z" fill="#2E282A"/>
+                        <path d="M9.77721 8.93938C9.68503 8.93938 9.59849 8.88262 9.56491 8.79108C9.52192 8.67385 9.58212 8.54395 9.69935 8.50097L10.6037 8.16939C10.7209 8.12643 10.8508 8.1866 10.8938 8.3038C10.9368 8.42103 10.8766 8.55092 10.7593 8.5939L9.85501 8.92549C9.82933 8.93492 9.80304 8.93938 9.77721 8.93938Z" fill="#2E282A"/>
+                        <path d="M4.09992 3.77369H0.22608C0.101193 3.77369 0 3.67247 0 3.54761C0 3.42276 0.101193 3.32153 0.22608 3.32153H4.09992C4.22481 3.32153 4.326 3.42276 4.326 3.54761C4.326 3.67247 4.22478 3.77369 4.09992 3.77369Z" fill="#C4C4C4"/>
+                        <path d="M2.77358 4.70778H0.22608C0.101194 4.70778 0 4.60655 0 4.4817C0 4.35684 0.101194 4.25562 0.22608 4.25562H2.77358C2.89847 4.25562 2.99966 4.35684 2.99966 4.4817C2.99966 4.60655 2.89844 4.70778 2.77358 4.70778Z" fill="#D6D8E0"/>
+                        <path d="M14.3037 13.6426V13.9473C14.3037 14.0721 14.2024 14.1734 14.0776 14.1734C13.9528 14.1734 13.8516 14.0721 13.8516 13.9473V13.6426H14.3037Z" fill="#D6D8E0"/>
+                        <path d="M13.2185 13.6426V14.0378C13.2185 14.1626 13.1172 14.2638 12.9924 14.2638C12.8676 14.2638 12.7664 14.1626 12.7664 14.0378V13.6426H13.2185Z" fill="#D6D8E0"/>
+                        <path d="M10.9275 13.6426V14.3392C10.9275 14.464 10.8262 14.5653 10.7014 14.5653C10.5766 14.5653 10.4753 14.464 10.4753 14.3392V13.6426H10.9275Z" fill="#D6D8E0"/>
+                        <path d="M12.1333 13.6426V14.1885C12.1333 14.3133 12.0323 14.4146 11.9072 14.4146C11.7824 14.4146 11.6812 14.3133 11.6812 14.1885V13.6426H12.1333Z" fill="#D6D8E0"/>
+                        <path d="M5.04739 9.49096L4.75711 9.78125C4.7131 9.82526 4.65522 9.84756 4.59734 9.84756C4.53947 9.84756 4.48159 9.82526 4.43758 9.78125C4.34926 9.69292 4.34926 9.54974 4.43758 9.46142L4.72907 9.16992L5.04739 9.49096Z" fill="#D6D8E0"/>
+                        <path d="M4.47689 8.91595L4.03347 9.35937C3.98946 9.40338 3.93159 9.42568 3.87371 9.42568C3.81583 9.42568 3.75796 9.40338 3.71395 9.35937C3.62562 9.27104 3.62562 9.12786 3.71395 9.03954L4.15827 8.59521L4.47689 8.91595Z" fill="#D6D8E0"/>
+                    </svg>
+                
+                    <p class="xp-read">XXXX passos</p>
+                </div>
             </div>
 
             <div class="tips-notices-etc">
-                <h1 class="titles">Dias e notícias</h1>
-                <!-- Feed -->
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
 
-                <hr>
+                <h1 class="titles">Dicas e notícias</h1>
+                <div class="group-1">
+                    <!-- Feed -->
+                    <div class="rec">Notícias e dicas daqui pra baixo</div>
+                    <div class="rec">Notícias e dicas daqui pra baixo</div>
+                </div>
 
                 <h1 class="titles">Receitas</h1>
-                <!-- Feed -->
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-
-                <hr>
+                <div class="group-1">
+                    <!-- Feed -->
+                    <div class="rec">Notícias e dicas daqui pra baixo</div>
+                    <div class="rec">Notícias e dicas daqui pra baixo</div>
+                </div>
 
                 <h1 class="titles">Exercícios</h1>
-                <!-- Feed -->
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-                <div class="rec">Notícias e dicas daqui pra baixo</div>
-
-                <hr>
+                <div class="group-1">
+                    <!-- Feed -->
+                    <div class="rec">Notícias e dicas daqui pra baixo</div>
+                    <div class="rec">Notícias e dicas daqui pra baixo</div>
+                </div>
             </div>
         </main> 
     </div>

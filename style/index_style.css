@@ -99,11 +99,24 @@ main{
     width: 100%;
 }
 
+.xp-bars{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .diary-bar{
     width: 100%;
     display: flex;
     flex-direction: column;    
     margin-bottom: 12px;
+}
+
+.diary-bar-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .diary-bar h4{
@@ -113,7 +126,20 @@ main{
     margin-bottom: 3px;
 }
 
+.diary-bar-items .fa-pencil-alt{
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.group-1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    border-bottom: .2px solid rgba(244, 244, 246, .4);
+}
+
 .rec{
+    min-width: 320px;
     height: 220px;
     background: var(--gray-color);
     
@@ -127,10 +153,6 @@ main{
     text-align: center;
 
     margin-bottom: 20px;
-}
-
-.rec:last-child{
-    margin-bottom: 50px;
 }
 
 @media screen and (min-width: 620px) {
@@ -156,10 +178,85 @@ main{
     hr{
         margin-top: 20px;
     }
+
+    .group-1{
+        flex-direction: row;
+    }
+
+    .rec:nth-child(n+2){    
+        margin-left: 40px;
+    }
 }
 
 @media screen and (min-width: 768px){
     .xp-container{
         right: 12vw;
     }
+}
+
+@media screen and (min-width: 1150px){
+    body{
+        background: var(--white-color);
+    }
+
+    p, 
+    h1, 
+    h2, 
+    h3,
+    h4, 
+    #add-food,
+    .diary-bar .fa-pencil-alt{
+        color: var(--dark-color);
+    }
+    
+    .index-logo{
+        color: var(--white-color);
+    }
+
+    .container{
+        position: relative;
+        display: flex;
+        width: 1150px;
+    }
+
+    .profile-container, hr{
+        visibility: hidden;
+        display: none;
+    }
+
+    main{
+        width: 857px;
+        position: absolute;
+        right: 0;
+        top: 90px;
+        float: right;
+    }
+
+    main .titles{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .xp-bars{
+        border-bottom:  .2px solid rgba(46, 40, 42, .4);
+        margin-bottom: 20px;
+    }
+
+    .xp-bars .diary-bar{
+        max-width: 410px;
+    }
+    
+    .diary-bar-items h4,
+    .diary-bar .fa-pencil-alt{
+        font-size: 1.6rem;
+    }
+    .diary-bar .xp-bar{
+        background: var(--dark-color);
+    }
+
+    .group-1{
+        border-bottom: .2px solid rgba(46, 40, 42, .4);
+    }
+
+
 }

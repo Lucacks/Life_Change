@@ -84,6 +84,8 @@
     color: var(--white-color);
 }
 
+/* Desktop layout */
+
 @media screen and (min-width: 1150px){
     body{
         background: var(--white-color);
