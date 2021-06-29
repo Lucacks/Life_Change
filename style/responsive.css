@@ -26,6 +26,12 @@ body{
     opacity: .8;
 }
 
+#profile-desktop,
+.desktop-food-group{
+    visibility: hidden;
+    display: none;
+}
+
 /* Cellphone screens */
 
 @media screen and (min-width: 360px) {
