@@ -104,18 +104,16 @@
     }
 
     .container{
+        position: relative;
         display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .food-container{
-        width: 857px;
-        height: auto;
+        width: 1150px;
     }
 
     .responsive-container{
-        margin-top: 60px;
+        position: absolute;
+        width: 857px;
+        right: 0;
+        top: 56px;
     }
 
     .side-side .back,
