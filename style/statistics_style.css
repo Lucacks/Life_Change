@@ -251,6 +251,20 @@
     margin: 0 .8px;
 }
 
+.cup-of-water{
+    width: 25.6px;
+}
+
+.lot-of-svg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.lot-of-svg svg:nth-child(n+2){
+    margin-left: 4px;
+}
+
 /* Graphics style */
 
 .graphic-table{    
@@ -268,4 +282,165 @@
     border-radius: 7px;
 
     margin: 3px 0 50px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .tables-summary{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .tables-summary .table{
+        width: 270px;
+    }
+    
+}
+
+@media screen and (min-width: 1150px){
+    body{
+        background: var(--white-color);
+    }
+
+    p, 
+    h1, 
+    h2, 
+    h3,
+    h4, 
+    #add-food,
+    .diary-bar .fa-pencil-alt{
+        color: var(--dark-color);
+    }
+    
+    .index-logo{
+        color: var(--white-color);
+    }
+
+    .container{
+        position: relative;
+        display: flex;
+        width: 1150px;
+    }
+
+    .profile-container{
+        visibility: hidden;
+        display: none;
+    }
+
+    .desktop-container{
+        width: 857px;
+        position: absolute;
+        right: 0;
+        top: 90px;
+        float: right;
+    }
+
+    .tables-summary{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .tables-summary .table{
+        width: 410px;
+    }
+
+    .lot-of-svg svg:nth-child(n+2){
+        margin-left: 8px;
+    }
+
+    .lot-of-svg svg:last-child{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .cup-of-water{
+        width: 39px;
+    }
+
+    .subtitle{
+        font-size: 1.6rem;
+    }
+    
+    .kcal-table, .water-table{
+        height: 220px;
+    }
+
+    .kcal-info h1{
+        font-size: 1.4rem;
+    }
+    .kcal-info .xp-bar,
+    .xp-bar .total-xp{
+        height: 6px;
+    }
+    .kcal-info p{
+        font-size: 1rem;
+    }
+
+    .progress span p:nth-child(1){
+        font-size: 2.4rem;
+        margin-bottom: -10px;
+    }
+
+    .total h1{
+        font-size: 1.8rem;
+    }
+    
+    .barOverflow{ 
+        position: relative;
+        width: 126px;
+        height: 63px; 
+        margin-bottom: -45px;
+    }
+
+    .bar{
+        border: 6px solid var(--white-color);
+        border-bottom-color: var(--dark-color);
+        border-right-color: var(--dark-color);
+
+        width: 100%; 
+        height: 126px;
+    }
+
+    .water-table p:nth-child(1){
+        margin-top: 13px;
+        color: var(--white-color);
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .water-table p:nth-child(2){
+        color: var(--white-color);
+        font-size: 1.4rem;
+        margin: 5px 0 22px;
+    }
+
+    .steps-table{
+        height: 93px;
+    }
+
+    .steps-table .number p:nth-child(1){
+        font-size: 1.2rem;
+    }
+
+    .steps-xp-bar,
+    .total-steps-xp{
+        height: 9px;
+        margin-bottom: -20px;
+    }
+
+    .indicator{
+        position: absolute;
+        top: 295px;
+    }
+
+    .indicator svg:nth-child(1){
+        height: 49px;
+        margin-bottom: -2px;
+    }
+    
+    .indicator svg:nth-child(2){
+        width: 25px;
+        height: 11px;
+    }
 }
