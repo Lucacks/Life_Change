@@ -1,3 +1,8 @@
+.responsive-container>h1{
+    visibility: hidden;
+    display: none;
+}
+
 .food-container{
     width: 100%;
     display: flex;
@@ -113,20 +118,26 @@
         position: absolute;
         width: 857px;
         right: 0;
-        top: 56px;
+        top: 86px;
+    }
+    
+    .responsive-container>h1{
+        visibility: visible;
+        display: initial;   
+        font-size: 2rem;     
     }
 
     .side-side .back,
     .side-side .fa-cog,
-    .food-container p,
+    .food-container,
     .food-group{
         visibility: hidden;
         display: none;
     }
 
-    .side-side h1{
+    .side-side .titles{
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: 700;
     }
 
     /* Food table */

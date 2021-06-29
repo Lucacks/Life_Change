@@ -139,7 +139,7 @@ main{
 }
 
 .rec{
-    min-width: 320px;
+    max-width: 320px;
     height: 220px;
     background: var(--gray-color);
     
