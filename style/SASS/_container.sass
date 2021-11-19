@@ -1,13 +1,6 @@
-.container
-    // display: grid;
-    // grid-template-columns: .35fr 1fr
-    // grid-template-rows: .5fr 1fr 2fr .5fr
-    // grid-template-areas: "header header" "profile-info menu-daily-resume" "ranking menu-static" "footer footer"
-    // grid-column-gap: 70px
-    // grid-row-gap: 20px
-    
+.container    
     display: grid;
-    grid-template-columns: 0.35fr 1fr;
+    grid-template-columns: .35fr 1fr;
     grid-template-rows: 0.4fr 1fr 2fr 0.3fr;
     grid-column-gap: 70px;
     grid-row-gap: 20px;
@@ -21,14 +14,12 @@
         grid-area: 1 / 1 / 2 / 3
 
     #profile-infos
-        border: 1px solid red
         grid-area: 2 / 1 / 3 / 2
     
     #ranking
         grid-area: 3 / 1 / 4 / 2
 
     .menu-daily-resume
-        border: 1px solid blue
         grid-area: 2 / 2 / 3 / 3
     
     .menu-static 

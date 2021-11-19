@@ -1,25 +1,45 @@
 #profile-infos
-    display: grid;
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: repeat(5, 1fr)
-    grid-template-areas: "foto profile-title" "foto profile-peso" "foto profile-estrelas" "premiacao premiacao" "barra-xp barra-xp"
+    display: grid
+    height: auto
+    grid-template-columns: .5fr 1fr
+    grid-template-rows: repeat(4, fit-content(10%))
+    grid-column-gap: 13px
+    grid-row-gap: 8px
+    max-width: 226px
     
     #profile-pic
         width: 85px
         height: 85px
         border-radius: 50%
-        grid-area: "foto"
-
-    height: 2px
+        grid-area: 1 / 1 / 4 / 2
+    h2
         @include fontConfig(2rem, 600, $color1)
-        margin-bottom: 5px
-        grid-area: "profile-peso"
-    p
+        min-width: fit-content
+        grid-area: 1 / 2 / 2 / 3
+    .profile-weight
         @include fontConfig(1.4rem, 400, $color1)
-        margin-bottom: 5px
-        grid-area: "profile-estrelas"
-
+        grid-area: 2 / 2 / 3 / 3
+    .profile-stars
+        @include fontConfig(1.4rem, 400, $color1)
+        grid-area: 3 / 2 / 4 / 3
+    
+   
     .xp-container
+        @include flexbox(column, center, initial)  
         width: 100%
-        @include flexbox(row, center, space-between) 
-        grid-area: "premiacao"
+        margin-top: 10px
+        grid-area: 4 / 1 / 5 / 3
+
+        .kcal-prize
+            @include flexbox(row, center, space-between)  
+            width: 100%
+
+            p
+                font-size: 1.1rem
+
+        @import 'xp-bar'
+            
+
+
+        
+

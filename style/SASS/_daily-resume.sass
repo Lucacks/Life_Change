@@ -1,0 +1,27 @@
+.menu-daily-resume
+    .xp-bars
+        @include flexbox(row, center, space-between)
+        border-bottom: 0.2px solid rgba(46, 40, 42, .4)
+
+        .diary-bar
+            width: 48%
+            @include flexbox(column, center, center)
+            padding: 20px 0
+
+            &-items
+                @include flexbox(row, center, space-between)
+                width: 100%
+            
+                h4
+                    @include fontConfig(1.4rem, 400, $color1)
+                    line-height: 21px
+                    margin-bottom: 3px
+
+        .calories       
+            @import 'xp-bar'
+            
+        .steps
+            @import 'xp-bar'
+            .foots-icon
+                width: 10px
+
