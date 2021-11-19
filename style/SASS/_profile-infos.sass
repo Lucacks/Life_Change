@@ -1,0 +1,25 @@
+#profile-infos
+    display: grid;
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: repeat(5, 1fr)
+    grid-template-areas: "foto profile-title" "foto profile-peso" "foto profile-estrelas" "premiacao premiacao" "barra-xp barra-xp"
+    
+    #profile-pic
+        width: 85px
+        height: 85px
+        border-radius: 50%
+        grid-area: "foto"
+
+    height: 2px
+        @include fontConfig(2rem, 600, $color1)
+        margin-bottom: 5px
+        grid-area: "profile-peso"
+    p
+        @include fontConfig(1.4rem, 400, $color1)
+        margin-bottom: 5px
+        grid-area: "profile-estrelas"
+
+    .xp-container
+        width: 100%
+        @include flexbox(row, center, space-between) 
+        grid-area: "premiacao"

@@ -1,0 +1,20 @@
+header
+    width: 100%
+    background: $color1
+    .header-container
+        @include flexbox(row, center, space-between)
+        max-width: 1150px
+        margin: 0 auto
+        padding: 12px 0
+
+        .index-logo
+            @include fontConfig(2.4rem, 700, $color2)
+    
+    .menu
+        width: 180px
+        @include flexbox(row, center, space-between)
+
+        .profile-photo
+            width: 30px
+            height: 30px
+            border-radius: 50%

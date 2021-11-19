@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body, input, button, option {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  background: #2E282A;
+}
+
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+header .header-container .index-logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #F4F4F6;
+}
+
+header .menu {
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .menu .profile-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.35fr 1fr;
+      grid-template-columns: 0.35fr 1fr;
+  -ms-grid-rows: 0.4fr 1fr 2fr 0.3fr;
+      grid-template-rows: 0.4fr 1fr 2fr 0.3fr;
+  grid-column-gap: 70px;
+  grid-row-gap: 20px;
+  height: 100vh;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.container #header {
+  border: 1px solid green;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.container #profile-infos {
+  border: 1px solid red;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.container #ranking {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.container .menu-daily-resume {
+  border: 1px solid blue;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.container .menu-static {
+  border: 1px solid yellow;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.container #footer {
+  border: 1px solid ciano;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+#profile-infos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "foto profile-title" "foto profile-peso" "foto profile-estrelas" "premiacao premiacao" "barra-xp barra-xp";
+  height: 2px;
+  height-font-size: 2rem;
+  height-font-weight: 600;
+  height-color: #2E282A;
+  height-margin-bottom: 5px;
+  height-grid-area: "profile-peso";
+}
+
+#profile-infos #profile-pic {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  grid-area: "foto";
+}
+
+#profile-infos p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #2E282A;
+  margin-bottom: 5px;
+  grid-area: "profile-estrelas";
+}
+
+#profile-infos .xp-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-area: "premiacao";
+}
+
+#ranking h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(46, 40, 42, 0.5);
+  margin: 10px 0 15px;
+}
+
+#ranking .rank {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+#ranking .rank .rank-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#ranking .rank .rank-content .profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-top: 5.5px;
+  background: #C4C4C4;
+}
+
+#ranking .rank .rank-content .info-rank-content {
+  margin-left: 10px;
+}
+
+#ranking .rank .rank-content .info-rank-content h1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#ranking .rank .rank-content .info-rank-content .fa-star {
+  font-size: .9rem;
+  color: #FFBF00;
+}
+
+#ranking .rank .rank-content .info-rank-content p:nth-child(1) {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+#ranking .rank .rank-content .info-rank-content p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#ranking .rank .fa-chevron-right {
+  font-size: 2rem;
+  color: #16F4D0;
+}
+/*# sourceMappingURL=main.css.map */

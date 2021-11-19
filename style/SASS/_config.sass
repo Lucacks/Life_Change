@@ -1,0 +1,40 @@
+$color1: #2E282A
+$color2: #F4F4F6
+$color3: #16F4D0
+$color4: #C4C4C4
+$color5: #51BEFF
+$color6: #FFBF00
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body, input, button, option
+    font-family: 'Poppins', sans-serif;
+
+@mixin flexbox($directionValue, $alignValue, $justifyValue) 
+    display: flex;
+    flex-direction: $directionValue
+    align-items: $alignValue
+    justify-content: $justifyValue
+
+@mixin fontConfig($fontSize, $fontWeight, $fontColor)
+    font-size: $fontSize
+    font-weight: $fontWeight
+    color: $fontColor
+
+@mixin mediaSmall
+    @media screen and (min-width: 541px)
+        @content
+        
+@mixin mediaMedium
+    @media screen and (min-width: 768px)
+        @content
+
+@mixin mediaLarge
+    @media screen and (min-width: 1150px)
+        @content

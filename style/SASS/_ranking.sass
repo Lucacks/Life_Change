@@ -1,0 +1,42 @@
+#ranking
+    h4
+        font-size: 1.2rem
+        font-weight: 400
+        color: rgba(46, 40, 42, .5)
+        margin: 10px 0 15px
+    .rank        
+        width: 100%
+        @include flexbox(row, center, space-between)
+        margin-top: 15px
+        .rank-content
+            display: flex
+            .profile-pic
+                width: 35px
+                height: 35px
+                border-radius: 50%
+                margin-top: 5.5px
+                background: $color4
+
+            .info-rank-content
+                margin-left: 10px
+
+                h1
+                    font-size: 1rem
+                    font-weight: 600
+
+                .fa-star
+                    font-size: .9rem
+                    color: $color6
+                    
+                p:nth-child(1)
+                    font-size: .9rem
+                    font-weight: 400
+                    
+                p:nth-child(2)
+                    font-size: 1rem
+                    font-weight: 400
+
+        .fa-chevron-right
+            font-size: 2rem
+            color: $color3
+
