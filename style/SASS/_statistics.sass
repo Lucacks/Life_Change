@@ -1,0 +1,135 @@
+.statistics-summary
+    .table
+        .subtitle
+            @include fontConfig(1rem, 400, $color1)
+
+        .kcal-table
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr
+            gap: 10px 0
+            grid-template-areas: "consumed total spent"
+            
+
+            width: 100%
+            height: 170px
+            background: $color3
+            border-radius: 7px
+            margin: 3px 0 12px
+
+            .consumed
+                grid-area: "consumed"
+                @import 'xp-bar'    
+            .total
+                grid-area: "total"
+            .spent
+                grid-area: "spent"
+                @import 'xp-bar'
+
+            .kcal-info
+                @include flexbox(column, center, center)
+                padding: 0 7px
+                margin-top: -20px
+
+                .xp-bar
+                    .total-xp
+                        background: $color2
+
+                h1,
+                h4
+                    @include fontConfig(1.4rem, 400, $color1)
+                    padding-top: 3px
+                
+                p
+                    @include fontConfig(1.6rem, 400, $color1)
+                    padding-top: 3px
+
+            .total
+                h1
+                    font-size: 2.2rem
+
+                .progress
+                    position: relative
+                    text-align: center
+                    
+
+                    span
+                        p:nth-child(1)
+                            @include fontConfig(2.6rem, 400, $color1)
+                            margin-bottom: -10px                                
+                            position: absolute
+                            top: 20px
+                            left: 34%
+                        p:nth-child(2)
+                            @include fontConfig(1.8rem, 400, $color1)
+
+                    .barOverflow
+                        position: relative
+                        width: 180px
+                        height: 90px
+                        margin-bottom: -35px
+                        overflow: hidden
+
+                        .bar
+                            position: absolute;
+                            top: 0; 
+                            left: 0;
+                            width: 180px; 
+                            height: 180px;
+                            border-radius: 50%;
+                            box-sizing: border-box;
+                            border: 7px solid $color2;
+                            border-bottom-color: $color1;
+                            border-right-color: $color1;
+
+
+.steps-table
+    @include flexbox(column, center, center)
+    width: 100%;
+    height: 100px;
+    background: rgba(196, 196, 196, .8);
+    border-radius: 7px;
+    margin: 3px 0 12px;
+
+    .number-line
+        @include flexbox(row, center, space-between)
+        width: 92.5%
+        margin-top: 15px
+
+        .number
+            @include flexbox(column, center, center)
+
+            p:nth-child(2)
+                @include fontConfig(.5rem, 500, $color1)
+
+    .steps-xp-bar            
+        width: 91%
+        height: 2px
+        background: $color1
+        border-radius: 10px
+        overflow: hidden
+        .indicator
+            @include flexbox(column, center, center)
+            position: absolute
+            top: 450px
+
+            img
+                height: 28px
+                margin-bottom: -2px
+            svg
+                width: 10px
+                height: 5px
+
+        .total-steps-xp
+            width: 50%
+            height: 2px
+            background: $color2
+            border-radius: 10px
+            border: none
+
+
+            
+
+
+
+

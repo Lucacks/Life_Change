@@ -1,11 +1,44 @@
 @import 'config'
-@import 'header'
 
+.header-stripe
+    width: 100%
+    height: 66px
+    background: $color1
+    position: absolute
+    z-index: -10
+
+@import 'header'
 @import 'container'
 @import 'profile-infos'
-
 @import 'ranking'
-
 @import 'daily-resume'
 
-@import 'food'
+#profile-edit
+    @import 'profile-edit'
+    display: block
+    width: 100%
+    max-width: 800px
+
+#menu-statistics
+    @import 'statistics'
+    display: block
+    width: 100%
+    max-width: 800px
+
+#menu-food
+    @import 'food'
+    display: block
+    width: 100%
+    max-width: 800px    
+
+#menu-inputs
+    @import 'inputs'
+    display: block
+    width: 100%
+    max-width: 800px
+
+@import 'footer'
+
+/** Responsive **/
+@import 'responsive'
+

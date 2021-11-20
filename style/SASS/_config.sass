@@ -16,6 +16,10 @@ html
 body, input, button, option
     font-family: 'Poppins', sans-serif;
 
+p, 
+h1
+    margin-bottom: 0
+
 /** Icons **/ 
 .fa-star
     color: $color6
@@ -25,7 +29,8 @@ body, input, button, option
     font-size: 1.4rem
     cursor: pointer
 
-
+.header-icons
+    width: 30px
 
 @mixin flexbox($directionValue, $alignValue, $justifyValue) 
     display: flex;
@@ -44,6 +49,10 @@ body, input, button, option
         
 @mixin mediaMedium
     @media screen and (min-width: 768px)
+        @content
+
+@mixin media942
+    @media screen and (min-width: 942px)
         @content
 
 @mixin mediaLarge

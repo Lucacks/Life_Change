@@ -1,0 +1,68 @@
+.activities-form
+    width: 100%
+    margin: 20px 0
+
+    .form-elements
+        @include flexbox(column, left, flex-start)
+        margin-bottom: 20px
+
+        label
+            @include fontConfig(1.4rem, 400, $color1)
+            margin-bottom: 5px
+
+        select,
+        input
+            @include fontConfig(1.4rem, 400, $color1)
+            height: 40px
+            padding: 0 10px
+            border: 1px solid $color1
+            border-radius: 4px
+
+    .form-side-side
+        @include flexbox(row, center, space-between)
+
+        .form-elements
+            width: 45%
+
+    button
+        @include fontConfig(1.4rem, 700, $color2)
+        width: 100%
+        height: 50px
+        background: $color1
+        margin: 15px 0
+        border: none
+        outline: none
+        cursor: pointer
+
+.steps-form
+    @include flexbox(row, center, space-between)
+    flex-wrap: wrap
+
+    h1
+        width: 100%
+        margin: 20px 0
+
+    .form-elements
+        @include flexbox(column, left, flex-start)
+        margin-bottom: 20px
+        width: 45%
+
+        input
+            @include fontConfig(1.4rem, 400, $color1)
+            height: 40px
+            padding: 0 10px
+            border: 1px solid $color1
+            border-radius: 4px                
+        label
+            @include fontConfig(1.4rem, 400, $color1)
+            margin-bottom: 5px
+
+    button
+        @include fontConfig(1.4rem, 700, $color2)
+        width: 100%
+        height: 50px
+        background: $color1
+        margin: 15px 0
+        border: none
+        outline: none
+        cursor: pointer

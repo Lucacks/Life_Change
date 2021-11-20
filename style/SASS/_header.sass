@@ -5,7 +5,7 @@ header
         @include flexbox(row, center, space-between)
         max-width: 1150px
         margin: 0 auto
-        padding: 12px 0
+        padding: 15px 0
 
         .index-logo
             @include fontConfig(2.4rem, 700, $color2)
@@ -18,3 +18,10 @@ header
             width: 30px
             height: 30px
             border-radius: 50%
+
+    &::after       
+        width: 100%
+        height: 66px
+        background: $color1
+        position: absolute
+        z-index: -10

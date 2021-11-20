@@ -7,420 +7,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Change</title>
 
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/responsive.css">
-    <link rel="stylesheet" href="style/food_style.css">
-    <link rel="stylesheet" href="style/bottom_menu.css">
-    <link rel="stylesheet" href="style/desktop_aside.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="style/main.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 
-<body>
-    <header id="logo-menu">
-        <div class="menu-container">
-            <h1 class="index-logo" onclick="window.location.href='index_profile.html'">Life Change</h1>
-            <div class="menu">
-                <svg onclick="window.location.href='statistics.html'" width="30" height="30" viewBox="0 0 30 30"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M4.45312 14.0625C5.1622 14.0625 5.80399 13.778 6.27823 13.3212L8.87993 14.6219C8.86688 14.7279 8.84766 14.832 8.84766 14.9414C8.84766 16.3953 10.0305 17.5781 11.4844 17.5781C12.9382 17.5781 14.1211 16.3953 14.1211 14.9414C14.1211 14.5356 14.0213 14.1557 13.8567 13.8119L17.3861 10.2825C17.7299 10.4471 18.1098 10.5469 18.5156 10.5469C19.9695 10.5469 21.1523 9.36401 21.1523 7.91016C21.1523 7.63641 21.0986 7.37755 21.0207 7.12921L24.0873 4.82986C24.5057 5.10933 25.0072 5.27344 25.5469 5.27344C27.0007 5.27344 28.1836 4.09058 28.1836 2.63672C28.1836 1.18286 27.0007 0 25.5469 0C24.093 0 22.9102 1.18286 22.9102 2.63672C22.9102 2.91046 22.9639 3.16933 23.0418 3.41766L19.9752 5.71701C19.5568 5.43755 19.0553 5.27344 18.5156 5.27344C17.0618 5.27344 15.8789 6.4563 15.8789 7.91016C15.8789 8.31596 15.9787 8.69591 16.1433 9.03969L12.6139 12.569C12.2701 12.4045 11.8902 12.3047 11.4844 12.3047C10.7753 12.3047 10.1335 12.5892 9.65927 13.046L7.05757 11.7453C7.07062 11.6393 7.08984 11.5352 7.08984 11.4258C7.08984 9.97192 5.90698 8.78906 4.45312 8.78906C2.99927 8.78906 1.81641 9.97192 1.81641 11.4258C1.81641 12.8796 2.99927 14.0625 4.45312 14.0625Z"
-                        fill="#F4F4F6" />
-                    <path
-                        d="M29.1211 28.2422H28.1836V9.66797C28.1836 9.18228 27.7904 8.78906 27.3047 8.78906H23.7891C23.3034 8.78906 22.9102 9.18228 22.9102 9.66797V28.2422H21.1523V14.9414C21.1523 14.4557 20.7591 14.0625 20.2734 14.0625H16.7578C16.2721 14.0625 15.8789 14.4557 15.8789 14.9414V28.2422H14.1211V21.9727C14.1211 21.487 13.7279 21.0938 13.2422 21.0938H9.72656C9.24088 21.0938 8.84766 21.487 8.84766 21.9727V28.2422H7.08984V18.457C7.08984 17.9713 6.69662 17.5781 6.21094 17.5781H2.69531C2.20963 17.5781 1.81641 17.9713 1.81641 18.457V28.2422H0.878906C0.393219 28.2422 0 28.6354 0 29.1211C0 29.6068 0.393219 30 0.878906 30H29.1211C29.6068 30 30 29.6068 30 29.1211C30 28.6354 29.6068 28.2422 29.1211 28.2422Z"
-                        fill="#F4F4F6" />
-                </svg>
-                <svg width="20" height="31" viewBox="0 0 20 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M19.1694 0.116633C19.0033 -0.00163908 18.7893 -0.0293637 18.5968 0.0373524C18.5427 0.0562288 13.144 2.03949 13.144 8.18062C13.144 12.6015 14.5824 14.8339 15.3916 15.74L14.5862 16.5453C14.483 16.6485 14.4188 16.7832 14.405 16.9279L13.4096 26.8833C13.324 27.7302 13.6021 28.5784 14.1734 29.2101C14.7448 29.8418 15.564 30.203 16.4147 30.203C18.0796 30.203 19.435 28.8477 19.435 27.1828V0.63007C19.4362 0.424908 19.3368 0.234905 19.1694 0.116633Z"
-                        fill="#16F4D0" />
-                    <path
-                        d="M9.87519 8.14957L8.73258 0.536089C8.68728 0.226516 8.42171 0 8.1109 0C8.10459 0 8.09704 0 8.08949 0C7.76983 0.0100871 7.50933 0.257957 7.48421 0.576378L6.93302 7.18688C6.89904 7.59461 6.17542 7.59461 6.14145 7.18688L5.59155 0.576378C5.56383 0.250407 5.29201 0 4.96486 0C4.63765 0 4.36459 0.250407 4.33816 0.576378L3.78697 7.18688C3.75299 7.59461 3.02938 7.59461 2.9954 7.18688L2.44545 0.576378C2.41902 0.259255 2.15853 0.0113258 1.83887 0C1.83132 0 1.82501 0 1.81875 0C1.50794 0 1.24238 0.226516 1.19707 0.536089L0.0557005 8.14957C-0.280299 10.3808 0.930326 12.515 2.97145 13.4048L1.99997 27.0209C1.9421 27.8402 2.22902 28.6544 2.789 29.2559C3.34774 29.8574 4.13931 30.2022 4.96232 30.2022H4.96733C5.78911 30.2022 6.58191 29.8574 7.14189 29.2558C7.70187 28.6543 7.98879 27.8401 7.93093 27.0209L6.95944 13.4048C9.00063 12.515 10.2112 10.3808 9.87519 8.14957Z"
-                        fill="#16F4D0" />
-                </svg>
-                <img class="profile-settings" src="" alt="">
-            </div>
-
-        </div>
-    </header>
-
+<body>      
+    <div class="header-stripe"></div>
     <div class="container">
+        <header id="header">
+            <div class="header-container">
+                <h1 class="index-logo" onclick="window.location.href='SPA.html'">Life Change</h1>
+                <div class="menu">
+                    <a href="statistics.html" id="stats-icon" class="header-icons">
+                        <img src="assets/icons/statitcs.svg">
+                    </a>
+                    <a href="food.html" id="food-icon" class="header-icons">
+                        <img src="assets/icons/food.svg">
+                    </a>                    
+                    <a href="profile-edit.html" id="profile-icon" class="header-icons">
+                        <img src="assets/icons/user-profile.svg">
+                    </a>
+                </div>    
+            </div>
+        </header>
+        
+        <!-- DESKTOP -->
+        <aside id="profile-infos">
+            <img id="profile-pic" src="assets/Quadrada.JPG" alt="Foto de perfil">
+            <h2>Lucas Alves</h2>
+            <p class="profile-weight">Peso atual: 71kg</p>
+            <p class="profile-stars">Suas estrelas: 4 <i class="fas fa-star"></i></p>
+            <div class="xp-container">
+                <div class="kcal-prize">
+                    <p>Calorias até sua recompensa</p>
+                    <p>+1 <i class="fas fa-star"></i></p>
+                </div>
+                <div class="xp-bar">
+                    <div class="total-xp"></div>
+                </div>
+                <i class="fas fa-caret-up"></i>
+                <p class="xp-read">1500Kcal</p>
+            </div>
+        </aside>
 
-        <aside id="profile-desktop">
-            <div class="desktop-info-container">
-                <img id="profile-pic" src="assets/Quadrada.JPG" alt="Foto de perfil">
-                <div class="desktop-profile-content">
+        <!-- Ranking. -->
+        <div id="ranking">
+            <h4>Ranking para você se inspirar</h4>
+                <div class="rank">
+                    <div class="rank-content">
+                        <img class="profile-pic" src="">
+                        <div class="info-rank-content">
+                            <h1>Nome Sobrenome</h1>
+                            <p>Estrelas: 34 <i class="fas fa-star"></i></p>
+                            <p>Está mudando há 1 ano</p>
+                        </div>
+                    </div>
+                <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="rank">
+                    <div class="rank-content">
+                        <img class="profile-pic" src="" alt="Foto">
+                        <div class="info-rank-content">
+                            <h1>Nome Sobrenome</h1>
+                            <p>Estrelas: 34 <i class="fas fa-star"></i></p>
+                            <p>Está mudando há 1 ano</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="rank">
+                    <div class="rank-content">
+                        <img class="profile-pic" src="" alt="Foto">
+                        <div class="info-rank-content">
+                            <h1>Nome Sobrenome</h1>
+                            <p>Estrelas: 34 <i class="fas fa-star"></i></p>
+                            <p>Está mudando há 1 ano</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="rank">
+                    <div class="rank-content">
+                        <img class="profile-pic" src="" alt="Foto">
+                        <div class="info-rank-content">
+                            <h1>Nome Sobrenome</h1>
+                            <p>Estrelas: 34 <i class="fas fa-star"></i></p>
+                            <p>Está mudando há 1 ano</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+        </div>
+
+        <!-- MOBILE -->
+        <!-- <div class="profile-container">
+            <div class="info-container">
+                <img id="profile-pic" src="assets/Quadrada.JPG" alt="Foto de perfil">                    
+                <div class="profile-content">
                     <h2>Lucas Alves</h2>
                     <p>Peso atual: 71kg</p>
                     <p>Suas estrelas: 4 <i class="fas fa-star"></i></p>
                 </div>
             </div>
-            <div class="desktop-xp-container">
-                <div class="kcal-prize">
-                    <p>Calorias até sua recompensa</p>
-                    <p>+1 <i class="fas fa-star"></i></p>
-                </div>
-                <div class="desktop-xp-bar">
-                    <div class="desktop-total-xp"></div>
+            <a href="#"><i class="fas fa-cog"></i></a>
+            <div class="xp-container">
+                <p>Calorias até sua recompensa</p>
+                <div class="xp-bar">
+                    <div class="total-xp"></div>
                 </div>
                 <i class="fas fa-caret-up"></i>
                 <p class="xp-read">1500Kcal</p>
             </div>
-
-            <!-- Ranking. -->
-            <div id="ranking">
-                <h4>Ranking para você se inspirar</h1>
-                    <div class="rank">
-                        <div class="rank-content">
-                            <img class="profile-pic" src="" alt="Foto">
-                            <div class="info-rank-content">
-                                <h1>Nome Sobrenome</h1>
-                                <p>Estrelas: 34 <i class="fas fa-star"></i></p>
-                                <p>Está mudando há 1 ano</p>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-right"></i>
+        </div>
+        <hr> -->
+    
+        <!-- DAILY RESUME -->
+        <main id="menu-daily-resume">
+            <h1 class="titles">Seu resumo diário</h1>
+            
+            <div class="xp-bars">
+                
+                <div class="diary-bar calories">
+                    <div class="diary-bar-items">
+                        <h4>Calorias</h4>
+                        <i class="fas fa-pencil-alt"></i>
                     </div>
-                    <div class="rank">
-                        <div class="rank-content">
-                            <img class="profile-pic" src="" alt="Foto">
-                            <div class="info-rank-content">
-                                <h1>Nome Sobrenome</h1>
-                                <p>Estrelas: 34 <i class="fas fa-star"></i></p>
-                                <p>Está mudando há 1 ano</p>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-right"></i>
+                    <div class="xp-bar">
+                        <div class="total-xp"></div>
                     </div>
-                    <div class="rank">
-                        <div class="rank-content">
-                            <img class="profile-pic" src="" alt="Foto">
-                            <div class="info-rank-content">
-                                <h1>Nome Sobrenome</h1>
-                                <p>Estrelas: 34 <i class="fas fa-star"></i></p>
-                                <p>Está mudando há 1 ano</p>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                    <div class="rank">
-                        <div class="rank-content">
-                            <img class="profile-pic" src="" alt="Foto">
-                            <div class="info-rank-content">
-                                <h1>Nome Sobrenome</h1>
-                                <p>Estrelas: 34 <i class="fas fa-star"></i></p>
-                                <p>Está mudando há 1 ano</p>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-            </div>
-
-        </aside>
-
-        <div class="responsive-container">
-            <h1 class="titles">Suas refeições</h1>
-
-            <div class="food-container">
-                <div class="side-side">
-                    <div class="title-back">
-                        <a class="back" href="index_profile.html"><i class="fas fa-chevron-left"></i></a>
-                        <h1 class="titles">Suas refeições</h1>
-                    </div>
-                    <a href="#"><i class="fas fa-cog"></i></a>
+                    <i class="fas fa-caret-up"></i>
+                    <p class="xp-read">1500Kcal</p>
                 </div>
-                <p>Este é um resumo das suas refeições.
-                    Clique em uma delas para editar e ver mais informações.</p>
-            </div>
+                
+                <div class="diary-bar steps">
+                    <div class="diary-bar-items">
+                        <h4>Passos</h4>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="xp-bar">
+                        <div class="total-xp"></div>
+                    </div>
 
-            <div class="desktop-food-group">
+                    <img src="assets/icons/foots.svg" class="foots-icon">
+                
+                    <p class="xp-read">XXXX passos</p>
+                </div>
+            </div>            
+        </main> 
+
+        <!-- FOOD MENU -->
+        <main id="menu-food">
+            <h1 class="titles">Suas refeições</h1>
+            <div class="food-container">
+                <!-- <p>Este é um resumo das suas refeições.
+                    Clique em uma delas para editar e ver mais informações.</p> -->
                 <div class="title-hour">
                     <h1>Café da Manhã &emsp; <i class="fas fa-pencil-alt"></i></h1>
                     <p>Horário: xx:xx</p>
                 </div>
-                <div class="food-table">
-                    <table>
-                        <tr>
-                            <th>Alimentos</th>
-                            <th>Quantidade</th>
-                            <th>Calorias</th>
-                            <th>Informação</th>
-                            <th>Editar/Deletar</th>
-                        </tr>
-                        <tr id="new-food">
-                            <td id="food-name">Torrada</td>
-                            <td>2</td>
-                            <td>X Kcal</td>
-                            <td>X</td>
-                            <td>
-                                <i class="fas fa-pencil-alt"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-                        <tr id="new-food">
-                            <td id="food-name">Peito de peru</td>
-                            <td>100g</td>
-                            <td>Y Kcal</td>
-                            <td>X</td>
-                            <td>
-                                <i class="fas fa-pencil-alt"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-                        <tr id="new-food">
-                            <td id="food-name">Requeijão</td>
-                            <td>1 porção</td>
-                            <td>Z Kcal</td>
-                            <td>X</td>
-                            <td>
-                                <i class="fas fa-pencil-alt"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="table-container"> 
+                    <div class="food-table">
+                        <table>
+                            <tr>
+                                <th>Alimentos</th>
+                                <th>Calorias</th>
+                                <th>Informação</th>
+                                <th>Editar/Deletar</th>
+                            </tr>
+                            <tr id="new-food">
+                                <td id="table-food">Torrada</td>
+                                <td id="table-calories">X Kcal</td>
+                                <td class="table-food-information">Torradas industrializadas</td>
+                                <td class="edit-delete">
+                                    <i class="edit-food fas fa-pencil-alt" ></i>
+                                    <i class="fas fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p class="total-kcal">Total de calorias: xyz Kcal</p>
                 </div>
-                <p class="total-kcal">Total de calorias: xyz Kcal</p>
-            </div>
-            <div class="desktop-food-group">
+                
+            </div>                        
+            <div class="food-container">
                 <div class="title-hour">
-                    <h1>[Nome da refeição] &emsp; <i class="fas fa-pencil-alt"></i></h1>
-                    <p>Horário: [HH:MM]</p>
+                    <h1>Almoço &emsp; <i class="fas fa-pencil-alt"></i></h1>
+                    <p>Horário: xx:xx</p>
                 </div>
-                <div class="food-table">
-                    <table>
-                        <tr>
-                            <th>Alimentos</th>
-                            <th>Quantidade</th>
-                            <th>Calorias</th>
-                            <th>Informação</th>
-                            <th>Editar/Deletar</th>
-                        </tr>
-                        <tr id="new-food">
-                            <td id="food-name">[Nome da comida]</td>
-                            <td>[Quantidade]</td>
-                            <td>[Calorias]</td>
-                            <td>[Infos]</td>
-                            <td>
-                                <i class="fas fa-pencil-alt"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-                        <tr id="new-food">
-                            <td id="food-name">[Nome da comida]</td>
-                            <td>[Quantidade]</td>
-                            <td>[Calorias]</td>
-                            <td>[Infos]</td>
-                            <td>
-                                <i class="fas fa-pencil-alt"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-                        <tr id="new-food">
-                            <td id="food-name">[Nome da comida]</td>
-                            <td>[Quantidade]</td>
-                            <td>[Calorias]</td>
-                            <td>[Infos]</td>
-                            <td>
-                                <i class="fas fa-pencil-alt"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="table-container"> 
+                    <div class="food-table">
+                        <table>
+                            <tr>
+                                <th>Alimentos</th>
+                                <th>Calorias</th>
+                                <th>Informação</th>
+                                <th>Editar/Deletar</th>
+                            </tr>
+                            <tr id="new-food">
+                                <td id="table-food">Torrada</td>
+                                <td id="table-calories">X Kcal</td>
+                                <td class="table-food-information">Torradas industrializadas</td>
+                                <td>
+                                    <i class="fas fa-pencil-alt"></i>
+                                    <i class="fas fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p class="total-kcal">Total de calorias: xyz Kcal</p>
                 </div>
-                <p class="total-kcal">Total de calorias: [xyz Kcal]</p>
-            </div>
-            <div class="desktop-food-group">
-                <div class="title-hour">
-                    <h1>[Nome da refeição] &emsp; <i class="fas fa-pencil-alt"></i></h1>
-                    <p>Horário: [HH:MM]</p>
-                </div>
-                <div class="food-table">
-                    <table>
-                        <tr>
-                            <th>Alimentos</th>
-                            <th>Quantidade</th>
-                            <th>Calorias</th>
-                            <th>Informação</th>
-                            <th>Editar/Deletar</th>
-                        </tr>
-                        <tr id="new-food">
-                            <td id="food-name">[Nome da comida]</td>
-                            <td>[Quantidade]</td>
-                            <td>[Calorias]</td>
-                            <td>[Infos]</td>
-                            <td>
-                                <i class="fas fa-pencil-alt"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-                        <tr id="new-food">
-                            <td id="food-name">[Nome da comida]</td>
-                            <td>[Quantidade]</td>
-                            <td>[Calorias]</td>
-                            <td>[Infos]</td>
-                            <td>
-                                <i class="fas fa-pencil-alt"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-                        <tr id="new-food">
-                            <td id="food-name">[Nome da comida]</td>
-                            <td>[Quantidade]</td>
-                            <td>[Calorias]</td>
-                            <td>[Infos]</td>
-                            <td>
-                                <i class="fas fa-pencil-alt"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <p class="total-kcal">Total de calorias: [xyz Kcal]</p>
-            </div>
+                
+            </div>        
+        </main>
 
-            <!-- Grupos de comida -->
-            <div class="food-group">
-                <div class="name-hour">
-                    <h3 id="food-title">Café da manhã</h3>
-                    <p class="food-hour">09:00</p>
-                </div>
-                <div id="food-op">
-                    <p id="food-name">Torrada</p>
-                    <div class="edit-delete">
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/pencil.png"
-                                alt="Editar"></button>
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/delete.png"
-                                alt="Editar"></button>
-                    </div>
-                </div>
-                <div id="food-op">
-                    <p id="food-name">Peito de peru</p>
-                    <div class="edit-delete">
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/pencil.png"
-                                alt="Editar"></button>
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/delete.png"
-                                alt="Editar"></button>
-                    </div>
-                </div>
-                <div id="food-op">
-                    <p id="food-name">Requeijão</p>
-                    <div class="edit-delete">
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/pencil.png"
-                                alt="Editar"></button>
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/delete.png"
-                                alt="Editar"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="food-group">
-                <div class="name-hour">
-                    <h3 id="food-title">Almoço</h3>
-                    <p class="food-hour">12:00</p>
-                </div>
-                <div id="food-op">
-                    <p id="food-name">Arroz</p>
-                    <div class="edit-delete">
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/pencil.png"
-                                alt="Editar"></button>
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/delete.png"
-                                alt="Editar"></button>
-                    </div>
-                </div>
-                <div id="food-op">
-                    <p id="food-name">Feijão</p>
-                    <div class="edit-delete">
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/pencil.png"
-                                alt="Editar"></button>
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/delete.png"
-                                alt="Editar"></button>
-                    </div>
-                </div>
-                <div id="food-op">
-                    <p id="food-name">Linguiça calabresa</p>
-                    <div class="edit-delete">
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/pencil.png"
-                                alt="Editar"></button>
-                        <button type="button"><img class="food-delete-edit" src="./assets/icons/delete.png"
-                                alt="Editar"></button>
-                    </div>
-                </div>
-            </div>
+        
+    </div>
 
-            <!-- Exemplo de adicionáveis -->
-            <div class="food-group">
-                <div class="name-hour">
-                    <h3 id="food-title">Lanchinho</h3>
-                    <p class="food-hour">15:00</p>
+    <footer id="footer">
+        <nav id="menu">
+            <a class="items" href="profile.html">
+                <div class="items">
+                    <img src="assets/icons/footer-icons/profile-icon.svg" alt="">              
+                    <p>Perfil</p>
                 </div>
-                <button id="add-food">+</button>
-            </div>
-            <div class="food-group">
-                <div class="name-hour">
-                    <h3 id="food-title">Café da tarde</h3>
-                    <p class="food-hour">18:00</p>
+            </a>
+            <a href="statistics.html" class="items">
+                <div class="items">
+                    <img src="assets/icons/footer-icons/statistics-icon.svg" alt="">
+                    <p>Estatísticas</p>
                 </div>
-                <button id="add-food">+</button>
-            </div>
-            <div class="food-group">
-                <div class="name-hour">
-                    <h3 id="food-title">Jantar</h3>
-                    <p class="food-hour">21:00</p>
+            </a>
+            <a href="food.html" class="items">
+                <div class="items">
+                    <img src="assets/icons/footer-icons/food-icon.svg" alt="">
+                    <p>Alimentação</p>
                 </div>
-                <button id="add-food">+</button>
-            </div>
-        </div>
+            </a>
+            <a href="ranking.html" class="items">
+                <div class="items">
+                    <img src="assets/icons/footer-icons/ranking-icon.svg" alt="">
+                    <p>Ranking</p>
+                </div>
+            </a>
+        </nav>
+    </footer>
 
-        <footer class="menu">
-            <nav id="menu">
-                <a class="items" href="profile.html">
-                    <div class="items">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.4652 13.992C15.8225 12.5261 13.6448 11.7188 11.3333 11.7188H8.66667C6.3552 11.7188 4.17751 12.5261 2.53484 13.992C0.900222 15.4507 0 17.3763 0 19.4141C0 19.7377 0.298489 20 0.666667 20H19.3333C19.7015 20 20 19.7377 20 19.4141C20 17.3763 19.0998 15.4507 17.4652 13.992Z" fill="#F4F4F6"/>
-                            <path d="M10 0C6.6916 0 4 2.36566 4 5.27344C4 8.18121 6.6916 10.5469 10 10.5469C13.3084 10.5469 16 8.18121 16 5.27344C16 2.36566 13.3084 0 10 0Z" fill="#F4F4F6"/>
-                            </svg>                        
-                        <p>Perfil</p>
-                    </div>
-                </a>
-                <a href="statistics.html" class="items">
-                    <div class="items">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.96875 9.375C3.44147 9.375 3.86932 9.18533 4.18549 8.88077L5.91995 9.74792C5.91125 9.81857 5.89844 9.888 5.89844 9.96094C5.89844 10.9302 6.68701 11.7188 7.65625 11.7188C8.62549 11.7188 9.41406 10.9302 9.41406 9.96094C9.41406 9.6904 9.34753 9.4371 9.23782 9.20792L11.5907 6.85501C11.8199 6.96472 12.0732 7.03125 12.3438 7.03125C13.313 7.03125 14.1016 6.24268 14.1016 5.27344C14.1016 5.09094 14.0657 4.91837 14.0138 4.75281L16.0582 3.21991C16.3371 3.40622 16.6714 3.51562 17.0312 3.51562C18.0005 3.51562 18.7891 2.72705 18.7891 1.75781C18.7891 0.788574 18.0005 0 17.0312 0C16.062 0 15.2734 0.788574 15.2734 1.75781C15.2734 1.94031 15.3093 2.11288 15.3612 2.27844L13.3168 3.81134C13.0379 3.62503 12.7036 3.51562 12.3438 3.51562C11.3745 3.51562 10.5859 4.3042 10.5859 5.27344C10.5859 5.54398 10.6525 5.79727 10.7622 6.02646L8.40927 8.37936C8.18008 8.26965 7.92679 8.20312 7.65625 8.20312C7.18353 8.20312 6.75568 8.39279 6.43951 8.69736L4.70505 7.8302C4.71375 7.75955 4.72656 7.69012 4.72656 7.61719C4.72656 6.64795 3.93799 5.85938 2.96875 5.85938C1.99951 5.85938 1.21094 6.64795 1.21094 7.61719C1.21094 8.58643 1.99951 9.375 2.96875 9.375Z" fill="#F4F4F6"/>
-                            <path d="M19.4141 18.8281H18.7891V6.44531C18.7891 6.12152 18.5269 5.85938 18.2031 5.85938H15.8594C15.5356 5.85938 15.2734 6.12152 15.2734 6.44531V18.8281H14.1016V9.96094C14.1016 9.63715 13.8394 9.375 13.5156 9.375H11.1719C10.8481 9.375 10.5859 9.63715 10.5859 9.96094V18.8281H9.41406V14.6484C9.41406 14.3246 9.15192 14.0625 8.82812 14.0625H6.48438C6.16058 14.0625 5.89844 14.3246 5.89844 14.6484V18.8281H4.72656V12.3047C4.72656 11.9809 4.46442 11.7188 4.14062 11.7188H1.79688C1.47308 11.7188 1.21094 11.9809 1.21094 12.3047V18.8281H0.585938C0.262146 18.8281 0 19.0903 0 19.4141C0 19.7379 0.262146 20 0.585938 20H19.4141C19.7379 20 20 19.7379 20 19.4141C20 19.0903 19.7379 18.8281 19.4141 18.8281Z" fill="#F4F4F6"/>
-                            </svg>
-                            
-                        <p>Estatísticas</p>
-                    </div>
-                </a>
-                <a href="food.html" class="items">
-                    <div class="items">
-                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.259 0.0771821C13.149 -0.00113827 13.0074 -0.0194976 12.8799 0.0246821C12.844 0.0371821 9.26904 1.3505 9.26904 5.41718C9.26904 8.34469 10.2215 9.82301 10.7574 10.423L10.224 10.9563C10.1557 11.0246 10.1132 11.1138 10.104 11.2096L9.44486 17.8022C9.38818 18.363 9.57236 18.9247 9.95068 19.343C10.329 19.7613 10.8715 20.0005 11.4349 20.0005C12.5374 20.0005 13.4349 19.103 13.4349 18.0005V0.417182C13.4357 0.281323 13.3699 0.155502 13.259 0.0771821Z" fill="#F4F4F6"/>
-                            <path d="M7.10433 5.39668L6.34769 0.355C6.31769 0.15 6.14183 0 5.93601 0C5.93183 0 5.92683 0 5.92183 0C5.71015 0.00667969 5.53765 0.17082 5.52101 0.38168L5.15601 4.75918C5.13351 5.02918 4.65433 5.02918 4.63183 4.75918L4.26769 0.38168C4.24933 0.16582 4.06933 0 3.85269 0C3.63601 0 3.45519 0.16582 3.43769 0.38168L3.07269 4.75918C3.05019 5.02918 2.57101 5.02918 2.54851 4.75918L2.18433 0.38168C2.16683 0.17168 1.99433 0.0075 1.78265 0C1.77765 0 1.77347 0 1.76933 0C1.56351 0 1.38765 0.15 1.35765 0.355L0.601826 5.39668C0.379326 6.87418 1.18101 8.2875 2.53265 8.87668L1.88933 17.8934C1.85101 18.4359 2.04101 18.975 2.41183 19.3734C2.78183 19.7717 3.30601 20 3.85101 20H3.85433C4.39851 20 4.92351 19.7717 5.29433 19.3733C5.66515 18.975 5.85515 18.4358 5.81683 17.8933L5.17351 8.87668C6.52519 8.2875 7.32684 6.87418 7.10433 5.39668Z" fill="#F4F4F6"/>
-                            </svg>
-                            
-                        <p>Alimentação</p>
-                    </div>
-                </a>
-                <a href="ranking.html" class="items">
-                    <div class="items">
-                        <svg class="icons" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="6.85205" y="8" width="6.2951" height="12" fill="#F4F4F6" />
-                            <path d="M14.1177 12.756H19.9999V20H14.1177V12.756Z" fill="#F4F4F6" />
-                            <path d="M0 12.756H5.88227V20H0V12.756Z" fill="#F4F4F6" />
-                            <path
-                                d="M9.99953 0L8.91986 2.21023L6.48096 2.5525L8.25258 4.26083L7.82501 6.6827L9.99953 5.52817L12.1741 6.6827L11.7465 4.26083L13.5181 2.5525L11.0792 2.21023L9.99953 0Z"
-                                fill="#F4F4F6" />
-                        </svg>
-                        <p>Ranking</p>
-                    </div>
-                </a>
-            </nav>
-        </footer>
-
+    <script src="js/script.js"></script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+        })
+    </script>
+    
 </body>
 
 </html>

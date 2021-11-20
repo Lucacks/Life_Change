@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 
-<body>
+<body>      
     <div class="header-stripe"></div>
     <div class="container">
         <header id="header">
@@ -30,7 +30,8 @@
                     <a href="profile-edit.html" id="profile-icon" class="header-icons">
                         <img src="assets/icons/user-profile.svg">
                     </a>
-                </div>    
+                </div>
+    
             </div>
         </header>
         
@@ -102,28 +103,6 @@
                 </div>
         </div>
 
-        <!-- MOBILE -->
-        <!-- <div class="profile-container">
-            <div class="info-container">
-                <img id="profile-pic" src="assets/Quadrada.JPG" alt="Foto de perfil">                    
-                <div class="profile-content">
-                    <h2>Lucas Alves</h2>
-                    <p>Peso atual: 71kg</p>
-                    <p>Suas estrelas: 4 <i class="fas fa-star"></i></p>
-                </div>
-            </div>
-            <a href="#"><i class="fas fa-cog"></i></a>
-            <div class="xp-container">
-                <p>Calorias até sua recompensa</p>
-                <div class="xp-bar">
-                    <div class="total-xp"></div>
-                </div>
-                <i class="fas fa-caret-up"></i>
-                <p class="xp-read">1500Kcal</p>
-            </div>
-        </div>
-        <hr> -->
-    
         <!-- DAILY RESUME -->
         <main id="menu-daily-resume">
             <h1 class="titles">Seu resumo diário</h1>
@@ -156,6 +135,76 @@
                     <p class="xp-read">XXXX passos</p>
                 </div>
             </div>            
+        </main>    
+
+        <!-- MOBILE -->
+        <!-- <div class="profile-container">
+            <div class="info-container">
+                <img id="profile-pic" src="assets/Quadrada.JPG" alt="Foto de perfil">                    
+                <div class="profile-content">
+                    <h2>Lucas Alves</h2>
+                    <p>Peso atual: 71kg</p>
+                    <p>Suas estrelas: 4 <i class="fas fa-star"></i></p>
+                </div>
+            </div>
+            <a href="#"><i class="fas fa-cog"></i></a>
+            <div class="xp-container">
+                <p>Calorias até sua recompensa</p>
+                <div class="xp-bar">
+                    <div class="total-xp"></div>
+                </div>
+                <i class="fas fa-caret-up"></i>
+                <p class="xp-read">1500Kcal</p>
+            </div>
+        </div>
+        <hr> -->
+    
+        <!-- YOUR INFORMATION -->
+        <main id="profile-edit">
+            <h1 class="titles">Configurar usuário</h1>
+            
+            <form action="">
+                <div class="profile-photo-edit">
+                    <img src="" alt="">
+                </div>
+                <div class="profile-info">
+                    <label for="name">Qual o seu nome?</label>
+                    <input type="text" id="name" placeholder="Seu nome">
+                    <div class="group1">
+                        <div class="group1-group">
+                            <label for="weight">Peso</label>
+                            <input type="text" placeholder="Seu peso em quilos" id="weight">
+                        </div>                     
+                        <div class="group1-group">
+                            <label for="weight">Altura</label>
+                            <input type="text" placeholder="Sua altura em centrímetros" id="height">
+                        </div>
+                    </div>
+
+                    <div class="group2">
+                        <div class="sexo">
+                            <label for="gender">Qual seu gênero?</label>
+                            <div class="radio-opt">
+                                <div class="radio">
+                                    <label for="masc">Masculino</label>
+                                    <input type="radio" name="gender" id="masc">
+                                </div>
+                                <div class="radio">
+                                    <label for="fem">Feminino</label>
+                                    <input type="radio" name="gender" id="fem">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imc">
+                            <label for="imc">IMC</label>
+                            <!-- Calcular IMC: peso / (altura * altura)-->
+                            <input type="number" name="imc" id="" disabled="disabled">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">Confirmar informeções</button>
+            </form>                       
         </main>        
     </div>
 

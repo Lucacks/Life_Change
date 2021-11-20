@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Change</title>
 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
     <link rel="stylesheet" href="style/main.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,8 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="header-stripe"></div>
+<body>      
     <div class="container">
         <header id="header">
             <div class="header-container">
@@ -156,7 +157,54 @@
                     <p class="xp-read">XXXX passos</p>
                 </div>
             </div>            
-        </main>        
+        </main> 
+
+        <!-- INPUTS MENU -->
+        <main id="menu-inputs">
+            <h1 class="titles">Cadastro de atividades</h1>
+            <form class="activities-form" action="">
+                <div class="form-elements">
+                    <label for="activity-type">Tipo de atividade</label>
+                    <select name="activity-type" id="activity-type">
+                        <option value="walk">Caminhada</option>
+                        <option value="run">Corrida</option>
+                        <option value="muscle">Musculação</option>
+                        <option value="hit">Treino hiit</option>
+                    </select>
+                </div>
+                <div class="form-side-side">
+                    <div class="form-elements">
+                        <label for="acitivity-quant">Quantidade de calorias</label>
+                        <input type="number" name="acitivity-quant" id="acitivity-quant">
+                    </div>
+                    <div class="form-elements">
+                        <label for="minutes">Duração do exercício</label>
+                        <input type="number" name="minutes" id="minutes">
+                    </div>
+                </div>
+
+                <button type="submit">Cadastrar exercício</button>
+            </form>
+
+            
+
+            <form class="steps-form" action="">
+                <h1 class="titles">Cadastro de passos</h1>
+                <div class="form-elements">
+                    <label for="steps-count">Quantidade de passos</label>
+                    <input type="number" name="steps-count" id="steps-count">
+                </div>
+                <!-- Colocar nesse input de baixo o cálculo de passos X calorias: a cada 1000 passos se queima 50kcal -->
+                <div class="form-elements">
+                    <label for="">Calorias gastas</label>
+                    <input type="number" name="" id="" disabled="disabled">
+                </div>
+
+                <button type="submit">Cadastrar passos</button>
+            </form>
+        </main>
+
+        
     </div>
 
 

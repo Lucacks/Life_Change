@@ -1,16 +1,17 @@
 .container    
     display: grid;
     grid-template-columns: .35fr 1fr;
-    grid-template-rows: 0.4fr 1fr 2fr 0.3fr;
+    grid-template-rows: .1fr .3fr 2fr 0.3fr;
     grid-column-gap: 70px;
     grid-row-gap: 20px;
     
     height: 100vh
     max-width: 1150px
     margin: 0 auto
+    z-index: 10
+    padding: 0 40px 
 
     #header
-        border: 1px solid green
         grid-area: 1 / 1 / 2 / 3
 
     #profile-infos
@@ -23,9 +24,7 @@
         grid-area: 2 / 2 / 3 / 3
     
     .menu-static 
-        border: 1px solid yellow
         grid-area: 3 / 2 / 4 / 3
     
     #footer
-        border: 1px solid ciano
         grid-area: 4 / 1 / 5 / 3
